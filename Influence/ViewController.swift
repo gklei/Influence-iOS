@@ -17,7 +17,7 @@ class ViewController: ElementalViewController {
    
    override func generateElements() -> [Elemental]? {
       let style = ElementalTextStyle()
-      style.font = UIFont.preferredFont(forTextStyle: .title1)
+      style.font = UIFont(name: "GothamSSm-Light", size: 24)!
       style.alignment = .center
       style.color = .darkGray
       

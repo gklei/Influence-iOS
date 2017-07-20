@@ -8,7 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		6FAFB9921C355118DE8CC07D /* Pods_Influence.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BE7D8018D8E7287370F7283 /* Pods_Influence.framework */; };
-		CE10DF3C1F214BC3002E7536 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE10DF3B1F214AC9002E7536 /* GoogleService-Info.plist */; };
+		CE10DF4A1F214DB2002E7536 /* Gotham-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = CE10DF3E1F214D7C002E7536 /* Gotham-Black.otf */; };
+		CE10DF4B1F214DB2002E7536 /* Gotham-BlackItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = CE10DF491F214D7C002E7536 /* Gotham-BlackItalic.otf */; };
+		CE10DF4C1F214DB2002E7536 /* Gotham-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = CE10DF461F214D7C002E7536 /* Gotham-Bold.otf */; };
+		CE10DF4D1F214DB2002E7536 /* Gotham-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = CE10DF431F214D7C002E7536 /* Gotham-BoldItalic.otf */; };
+		CE10DF4E1F214DB2002E7536 /* Gotham-Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = CE10DF3F1F214D7C002E7536 /* Gotham-Book.otf */; };
+		CE10DF4F1F214DB2002E7536 /* Gotham-BookItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = CE10DF421F214D7C002E7536 /* Gotham-BookItalic.otf */; };
+		CE10DF501F214DB2002E7536 /* Gotham-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = CE10DF401F214D7C002E7536 /* Gotham-Light.otf */; };
+		CE10DF511F214DB2002E7536 /* Gotham-LightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = CE10DF481F214D7C002E7536 /* Gotham-LightItalic.otf */; };
+		CE10DF521F214DB2002E7536 /* Gotham-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = CE10DF411F214D7C002E7536 /* Gotham-Medium.otf */; };
+		CE10DF531F214DB2002E7536 /* Gotham-MediumItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = CE10DF441F214D7C002E7536 /* Gotham-MediumItalic.otf */; };
+		CE10DF541F214DB2002E7536 /* Gotham-XLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = CE10DF471F214D7C002E7536 /* Gotham-XLight.otf */; };
+		CE10DF551F214DB2002E7536 /* Gotham-XLightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = CE10DF451F214D7C002E7536 /* Gotham-XLightItalic.otf */; };
+		CE10DF561F214DE5002E7536 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE10DF3B1F214AC9002E7536 /* GoogleService-Info.plist */; };
 		CE76781D1F213CA900C1DD87 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE76781C1F213CA900C1DD87 /* AppDelegate.swift */; };
 		CE76781F1F213CA900C1DD87 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE76781E1F213CA900C1DD87 /* ViewController.swift */; };
 		CE7678241F213CA900C1DD87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE7678231F213CA900C1DD87 /* Assets.xcassets */; };
@@ -18,7 +30,19 @@
 /* Begin PBXFileReference section */
 		0768E214E369AADE6E559E8B /* Pods-Influence.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Influence.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Influence/Pods-Influence.debug.xcconfig"; sourceTree = "<group>"; };
 		7BE7D8018D8E7287370F7283 /* Pods_Influence.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Influence.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CE10DF3B1F214AC9002E7536 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "Influence/GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		CE10DF3B1F214AC9002E7536 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "Influence/Resources/GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		CE10DF3E1F214D7C002E7536 /* Gotham-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Gotham-Black.otf"; path = "Influence/Resources/Gotham-Black.otf"; sourceTree = "<group>"; };
+		CE10DF3F1F214D7C002E7536 /* Gotham-Book.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Gotham-Book.otf"; path = "Influence/Resources/Gotham-Book.otf"; sourceTree = "<group>"; };
+		CE10DF401F214D7C002E7536 /* Gotham-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Gotham-Light.otf"; path = "Influence/Resources/Gotham-Light.otf"; sourceTree = "<group>"; };
+		CE10DF411F214D7C002E7536 /* Gotham-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Gotham-Medium.otf"; path = "Influence/Resources/Gotham-Medium.otf"; sourceTree = "<group>"; };
+		CE10DF421F214D7C002E7536 /* Gotham-BookItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Gotham-BookItalic.otf"; path = "Influence/Resources/Gotham-BookItalic.otf"; sourceTree = "<group>"; };
+		CE10DF431F214D7C002E7536 /* Gotham-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Gotham-BoldItalic.otf"; path = "Influence/Resources/Gotham-BoldItalic.otf"; sourceTree = "<group>"; };
+		CE10DF441F214D7C002E7536 /* Gotham-MediumItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Gotham-MediumItalic.otf"; path = "Influence/Resources/Gotham-MediumItalic.otf"; sourceTree = "<group>"; };
+		CE10DF451F214D7C002E7536 /* Gotham-XLightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Gotham-XLightItalic.otf"; path = "Influence/Resources/Gotham-XLightItalic.otf"; sourceTree = "<group>"; };
+		CE10DF461F214D7C002E7536 /* Gotham-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Gotham-Bold.otf"; path = "Influence/Resources/Gotham-Bold.otf"; sourceTree = "<group>"; };
+		CE10DF471F214D7C002E7536 /* Gotham-XLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Gotham-XLight.otf"; path = "Influence/Resources/Gotham-XLight.otf"; sourceTree = "<group>"; };
+		CE10DF481F214D7C002E7536 /* Gotham-LightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Gotham-LightItalic.otf"; path = "Influence/Resources/Gotham-LightItalic.otf"; sourceTree = "<group>"; };
+		CE10DF491F214D7C002E7536 /* Gotham-BlackItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Gotham-BlackItalic.otf"; path = "Influence/Resources/Gotham-BlackItalic.otf"; sourceTree = "<group>"; };
 		CE7678191F213CA900C1DD87 /* Influence.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Influence.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE76781C1F213CA900C1DD87 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE76781E1F213CA900C1DD87 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -57,9 +81,30 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		CE10DF3D1F214D4E002E7536 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CE10DF3B1F214AC9002E7536 /* GoogleService-Info.plist */,
+				CE10DF3E1F214D7C002E7536 /* Gotham-Black.otf */,
+				CE10DF491F214D7C002E7536 /* Gotham-BlackItalic.otf */,
+				CE10DF461F214D7C002E7536 /* Gotham-Bold.otf */,
+				CE10DF431F214D7C002E7536 /* Gotham-BoldItalic.otf */,
+				CE10DF3F1F214D7C002E7536 /* Gotham-Book.otf */,
+				CE10DF421F214D7C002E7536 /* Gotham-BookItalic.otf */,
+				CE10DF401F214D7C002E7536 /* Gotham-Light.otf */,
+				CE10DF481F214D7C002E7536 /* Gotham-LightItalic.otf */,
+				CE10DF411F214D7C002E7536 /* Gotham-Medium.otf */,
+				CE10DF441F214D7C002E7536 /* Gotham-MediumItalic.otf */,
+				CE10DF471F214D7C002E7536 /* Gotham-XLight.otf */,
+				CE10DF451F214D7C002E7536 /* Gotham-XLightItalic.otf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		CE7678101F213CA900C1DD87 = {
 			isa = PBXGroup;
 			children = (
+				CE10DF3D1F214D4E002E7536 /* Resources */,
 				CE76781B1F213CA900C1DD87 /* Influence */,
 				CE76781A1F213CA900C1DD87 /* Products */,
 				CC40453D18AFFAFCE7E64229 /* Pods */,
@@ -78,7 +123,6 @@
 		CE76781B1F213CA900C1DD87 /* Influence */ = {
 			isa = PBXGroup;
 			children = (
-				CE10DF3B1F214AC9002E7536 /* GoogleService-Info.plist */,
 				CE76781C1F213CA900C1DD87 /* AppDelegate.swift */,
 				CE76781E1F213CA900C1DD87 /* ViewController.swift */,
 				CE7678231F213CA900C1DD87 /* Assets.xcassets */,
@@ -151,7 +195,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE10DF3C1F214BC3002E7536 /* GoogleService-Info.plist in Resources */,
+				CE10DF561F214DE5002E7536 /* GoogleService-Info.plist in Resources */,
+				CE10DF4A1F214DB2002E7536 /* Gotham-Black.otf in Resources */,
+				CE10DF4B1F214DB2002E7536 /* Gotham-BlackItalic.otf in Resources */,
+				CE10DF4C1F214DB2002E7536 /* Gotham-Bold.otf in Resources */,
+				CE10DF4D1F214DB2002E7536 /* Gotham-BoldItalic.otf in Resources */,
+				CE10DF4E1F214DB2002E7536 /* Gotham-Book.otf in Resources */,
+				CE10DF4F1F214DB2002E7536 /* Gotham-BookItalic.otf in Resources */,
+				CE10DF501F214DB2002E7536 /* Gotham-Light.otf in Resources */,
+				CE10DF511F214DB2002E7536 /* Gotham-LightItalic.otf in Resources */,
+				CE10DF521F214DB2002E7536 /* Gotham-Medium.otf in Resources */,
+				CE10DF531F214DB2002E7536 /* Gotham-MediumItalic.otf in Resources */,
+				CE10DF541F214DB2002E7536 /* Gotham-XLight.otf in Resources */,
+				CE10DF551F214DB2002E7536 /* Gotham-XLightItalic.otf in Resources */,
 				CE7678271F213CA900C1DD87 /* LaunchScreen.storyboard in Resources */,
 				CE7678241F213CA900C1DD87 /* Assets.xcassets in Resources */,
 			);
