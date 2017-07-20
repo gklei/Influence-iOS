@@ -17,9 +17,9 @@ class ViewController: ElementalViewController {
    
    override func generateElements() -> [Elemental]? {
       let style = ElementalTextStyle()
-      style.font = UIFont(name: "GothamSSm-Light", size: 24)!
+      style.font = UIFont(30, .book)
+      style.color = UIColor(.outerSpace)
       style.alignment = .center
-      style.color = .darkGray
       
       return Element.form([
          .verticalSpace(24),

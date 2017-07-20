@@ -25,6 +25,8 @@
 		CE76781F1F213CA900C1DD87 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE76781E1F213CA900C1DD87 /* ViewController.swift */; };
 		CE7678241F213CA900C1DD87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE7678231F213CA900C1DD87 /* Assets.xcassets */; };
 		CE7678271F213CA900C1DD87 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE7678251F213CA900C1DD87 /* LaunchScreen.storyboard */; };
+		CE8696971F2156E700491931 /* UIFont+Influence.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8696961F2156E700491931 /* UIFont+Influence.swift */; };
+		CE8696991F21575C00491931 /* UIColor+Influence.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8696981F21575C00491931 /* UIColor+Influence.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +52,8 @@
 		CE7678231F213CA900C1DD87 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE7678261F213CA900C1DD87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE7678281F213CA900C1DD87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE8696961F2156E700491931 /* UIFont+Influence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIFont+Influence.swift"; path = "Extensions/UIFont+Influence.swift"; sourceTree = "<group>"; };
+		CE8696981F21575C00491931 /* UIColor+Influence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIColor+Influence.swift"; path = "Extensions/UIColor+Influence.swift"; sourceTree = "<group>"; };
 		D87ED9A0E37388C4A4B45860 /* Pods-Influence.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Influence.release.xcconfig"; path = "Pods/Target Support Files/Pods-Influence/Pods-Influence.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -124,6 +128,7 @@
 		CE76781B1F213CA900C1DD87 /* Influence */ = {
 			isa = PBXGroup;
 			children = (
+				CE8696951F2156CC00491931 /* Extensions */,
 				CE10DF571F21527D002E7536 /* Influence.entitlements */,
 				CE76781C1F213CA900C1DD87 /* AppDelegate.swift */,
 				CE76781E1F213CA900C1DD87 /* ViewController.swift */,
@@ -132,6 +137,15 @@
 				CE7678281F213CA900C1DD87 /* Info.plist */,
 			);
 			path = Influence;
+			sourceTree = "<group>";
+		};
+		CE8696951F2156CC00491931 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CE8696961F2156E700491931 /* UIFont+Influence.swift */,
+				CE8696981F21575C00491931 /* UIColor+Influence.swift */,
+			);
+			name = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -277,6 +291,8 @@
 			files = (
 				CE76781F1F213CA900C1DD87 /* ViewController.swift in Sources */,
 				CE76781D1F213CA900C1DD87 /* AppDelegate.swift in Sources */,
+				CE8696971F2156E700491931 /* UIFont+Influence.swift in Sources */,
+				CE8696991F21575C00491931 /* UIColor+Influence.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
