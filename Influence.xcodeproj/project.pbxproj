@@ -328,7 +328,7 @@
 				DEVELOPMENT_TEAM = 49BYD5B64K;
 				INFOPLIST_FILE = Influence/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = co.incipia.Influence;
+				PRODUCT_BUNDLE_IDENTIFIER = co.incipia.influence;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -342,7 +342,7 @@
 				DEVELOPMENT_TEAM = 49BYD5B64K;
 				INFOPLIST_FILE = Influence/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = co.incipia.Influence;
+				PRODUCT_BUNDLE_IDENTIFIER = co.incipia.influence;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
