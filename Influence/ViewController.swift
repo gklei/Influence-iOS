@@ -17,14 +17,22 @@ class ViewController: ElementalViewController {
    
    override func generateElements() -> [Elemental]? {
       let style = ElementalTextStyle()
-      style.font = UIFont(30, .book)
+      style.font = UIFont(30, .light)
       style.color = UIColor(.outerSpace)
       style.alignment = .center
+      
+      let numberStyle = ElementalTextStyle()
+      numberStyle.font = UIFont(100, .light)
+      numberStyle.color = UIColor(.outerSpace)
+      numberStyle.alignment = .center
       
       return Element.form([
          .verticalSpace(24),
          .text(configuration: TextElementConfiguration(textStyle: style),
-               content: "INFLUENCE")
+               content: "What's your influencing power?"),
+         .verticalSpace(100),
+         .text(configuration: TextElementConfiguration(textStyle: numberStyle),
+               content: "350")
          ])
    }
 }
