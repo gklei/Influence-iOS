@@ -13,11 +13,14 @@ import Branch
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
    var window: UIWindow?
+   var appRouter: AppRouter?
    
    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
       
       _setupFirebase()
-      _setupMainWindow()
+      
+      window = UIWindow()
+      appRouter = AppRouter(window: window!)
       
       let branch: Branch = Branch.getInstance()
       branch.initSession(launchOptions: launchOptions, automaticallyDisplayDeepLinkController: true, deepLinkHandler: { params, error in
@@ -53,13 +56,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
       let path = Bundle.main.path(forResource: "GoogleService-Info", ofType: "plist")!
       let options = FirebaseOptions(contentsOfFile: path)!
       FirebaseApp.configure(options: options)
-   }
-   
-   private func _setupMainWindow() {
-      let rootNav = UINavigationController(rootViewController: ViewController())
-      window = UIWindow()
-      window?.rootViewController = rootNav
-      window?.makeKeyAndVisible()
    }
 }
 
