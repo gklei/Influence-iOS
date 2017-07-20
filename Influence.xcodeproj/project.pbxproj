@@ -43,6 +43,7 @@
 		CE10DF471F214D7C002E7536 /* Gotham-XLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Gotham-XLight.otf"; path = "Influence/Resources/Gotham-XLight.otf"; sourceTree = "<group>"; };
 		CE10DF481F214D7C002E7536 /* Gotham-LightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Gotham-LightItalic.otf"; path = "Influence/Resources/Gotham-LightItalic.otf"; sourceTree = "<group>"; };
 		CE10DF491F214D7C002E7536 /* Gotham-BlackItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Gotham-BlackItalic.otf"; path = "Influence/Resources/Gotham-BlackItalic.otf"; sourceTree = "<group>"; };
+		CE10DF571F21527D002E7536 /* Influence.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Influence.entitlements; sourceTree = "<group>"; };
 		CE7678191F213CA900C1DD87 /* Influence.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Influence.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE76781C1F213CA900C1DD87 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE76781E1F213CA900C1DD87 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -123,6 +124,7 @@
 		CE76781B1F213CA900C1DD87 /* Influence */ = {
 			isa = PBXGroup;
 			children = (
+				CE10DF571F21527D002E7536 /* Influence.entitlements */,
 				CE76781C1F213CA900C1DD87 /* AppDelegate.swift */,
 				CE76781E1F213CA900C1DD87 /* ViewController.swift */,
 				CE7678231F213CA900C1DD87 /* Assets.xcassets */,
@@ -169,6 +171,11 @@
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = 49BYD5B64K;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.SafariKeychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -385,6 +392,7 @@
 			baseConfigurationReference = 0768E214E369AADE6E559E8B /* Pods-Influence.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Influence/Influence.entitlements;
 				DEVELOPMENT_TEAM = 49BYD5B64K;
 				INFOPLIST_FILE = Influence/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -399,6 +407,7 @@
 			baseConfigurationReference = D87ED9A0E37388C4A4B45860 /* Pods-Influence.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Influence/Influence.entitlements;
 				DEVELOPMENT_TEAM = 49BYD5B64K;
 				INFOPLIST_FILE = Influence/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

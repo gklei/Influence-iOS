@@ -7,6 +7,7 @@ target 'Influence' do
 
   # Pods for Influence
   pod 'Firebase/Core'
+  pod 'Branch'
 
   # Development Pods
   pod 'Elemental', :path => 'Pods/Elemental'

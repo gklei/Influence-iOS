@@ -1,5 +1,10 @@
 PODS:
   - Bindable (0.1.0)
+  - Branch (0.14.12):
+    - Branch/Core (= 0.14.12)
+    - Branch/without-IDFA (= 0.14.12)
+  - Branch/Core (0.14.12)
+  - Branch/without-IDFA (0.14.12)
   - Conduction (0.0.1):
     - Bindable
   - Elemental (0.1.0):
@@ -21,6 +26,7 @@ PODS:
 
 DEPENDENCIES:
   - Bindable (from `Pods/Bindable`)
+  - Branch
   - Conduction (from `Pods/Conduction`)
   - Elemental (from `Pods/Elemental`)
   - Firebase/Core
@@ -35,6 +41,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Bindable: 5b66126db4938727036b1cc15be77c15b738487c
+  Branch: f63d9cf82ac09747349a73184a0b739d28781c4d
   Conduction: c5ea9edbcf91d0597ad180bcd1816a00b0edf21e
   Elemental: d933cb88a1b79fbeda98f8e316523d4cb245b7f4
   Firebase: 284eea779b73fdff309791817da7c68bff8dd572
@@ -43,6 +50,6 @@ SPEC CHECKSUMS:
   FirebaseInstanceID: 9fbf536668f4d3f0880e7438456dabd1376e294b
   GoogleToolboxForMac: 8e329f1b599f2512c6b10676d45736bcc2cbbeb0
 
-PODFILE CHECKSUM: b3d019ac9bf94884f9f3a16225e31f493a10e8f6
+PODFILE CHECKSUM: da147747a00f092c546e0807a4bd023d068b8f18
 
 COCOAPODS: 1.2.1
