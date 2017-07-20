@@ -1,0 +1,6 @@
+framework module Conduction {
+  umbrella header "Conduction-umbrella.h"
+
+  export *
+  module * { export * }
+}

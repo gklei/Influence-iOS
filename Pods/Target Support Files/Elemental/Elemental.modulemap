@@ -1,0 +1,6 @@
+framework module Elemental {
+  umbrella header "Elemental-umbrella.h"
+
+  export *
+  module * { export * }
+}

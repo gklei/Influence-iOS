@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Bindable.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Conduction.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Elemental.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-Influence.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>58A933378536FE8B7B3D41F77F14F3D7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>90EEECDCF2AF42E81D8B4ECBF6C3F576</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>966AA438D4D3E13702159B2DBDCF4CF3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>AD81C1F5BC8B2884D16B2BA47C98AF4B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

@@ -1,0 +1,28 @@
+PODS:
+  - Bindable (0.1.0)
+  - Conduction (0.0.1):
+    - Bindable
+  - Elemental (0.1.0):
+    - Bindable
+
+DEPENDENCIES:
+  - Bindable (from `Pods/Bindable`)
+  - Conduction (from `Pods/Conduction`)
+  - Elemental (from `Pods/Elemental`)
+
+EXTERNAL SOURCES:
+  Bindable:
+    :path: Pods/Bindable
+  Conduction:
+    :path: Pods/Conduction
+  Elemental:
+    :path: Pods/Elemental
+
+SPEC CHECKSUMS:
+  Bindable: 5b66126db4938727036b1cc15be77c15b738487c
+  Conduction: c5ea9edbcf91d0597ad180bcd1816a00b0edf21e
+  Elemental: d933cb88a1b79fbeda98f8e316523d4cb245b7f4
+
+PODFILE CHECKSUM: 22b63a54291546616101fab0bb1c46cb8e53787a
+
+COCOAPODS: 1.2.1
