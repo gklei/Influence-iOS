@@ -6,6 +6,7 @@ target 'Influence' do
   use_frameworks!
 
   # Pods for Influence
+  pod 'Firebase/Core'
 
   # Development Pods
   pod 'Elemental', :path => 'Pods/Elemental'

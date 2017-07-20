@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -14,12 +15,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
    
    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
       
+      _setupFirebase()
+      _setupMainWindow()
+      
+      return true
+   }
+   
+   private func _setupFirebase() {
+      let path = Bundle.main.path(forResource: "GoogleService-Info", ofType: "plist")!
+      let options = FirebaseOptions(contentsOfFile: path)!
+      FirebaseApp.configure(options: options)
+   }
+   
+   private func _setupMainWindow() {
       let rootNav = UINavigationController(rootViewController: ViewController())
       window = UIWindow()
       window?.rootViewController = rootNav
       window?.makeKeyAndVisible()
-      
-      return true
    }
 }
 
