@@ -29,6 +29,7 @@
 		CE8696991F21575C00491931 /* UIColor+Influence.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8696981F21575C00491931 /* UIColor+Influence.swift */; };
 		CE86969B1F21665600491931 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE86969A1F21665600491931 /* AppRouter.swift */; };
 		CE86969D1F2167E800491931 /* WelcomeConductor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE86969C1F2167E800491931 /* WelcomeConductor.swift */; };
+		CE8696A01F22480D00491931 /* DetailMenuLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE86969F1F22480D00491931 /* DetailMenuLabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,7 @@
 		CE8696981F21575C00491931 /* UIColor+Influence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIColor+Influence.swift"; path = "Extensions/UIColor+Influence.swift"; sourceTree = "<group>"; };
 		CE86969A1F21665600491931 /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
 		CE86969C1F2167E800491931 /* WelcomeConductor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeConductor.swift; sourceTree = "<group>"; };
+		CE86969F1F22480D00491931 /* DetailMenuLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DetailMenuLabel.swift; path = UIKItSubclasses/DetailMenuLabel.swift; sourceTree = "<group>"; };
 		D87ED9A0E37388C4A4B45860 /* Pods-Influence.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Influence.release.xcconfig"; path = "Pods/Target Support Files/Pods-Influence/Pods-Influence.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -132,6 +134,7 @@
 		CE76781B1F213CA900C1DD87 /* Influence */ = {
 			isa = PBXGroup;
 			children = (
+				CE86969E1F2247EC00491931 /* UIKit Subclasses */,
 				CE8696951F2156CC00491931 /* Extensions */,
 				CE10DF571F21527D002E7536 /* Influence.entitlements */,
 				CE76781C1F213CA900C1DD87 /* AppDelegate.swift */,
@@ -152,6 +155,14 @@
 				CE8696981F21575C00491931 /* UIColor+Influence.swift */,
 			);
 			name = Extensions;
+			sourceTree = "<group>";
+		};
+		CE86969E1F2247EC00491931 /* UIKit Subclasses */ = {
+			isa = PBXGroup;
+			children = (
+				CE86969F1F22480D00491931 /* DetailMenuLabel.swift */,
+			);
+			name = "UIKit Subclasses";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -295,6 +306,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE8696A01F22480D00491931 /* DetailMenuLabel.swift in Sources */,
 				CE76781F1F213CA900C1DD87 /* ViewController.swift in Sources */,
 				CE76781D1F213CA900C1DD87 /* AppDelegate.swift in Sources */,
 				CE8696971F2156E700491931 /* UIFont+Influence.swift in Sources */,
