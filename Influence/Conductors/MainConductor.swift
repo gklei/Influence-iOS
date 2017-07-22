@@ -13,9 +13,10 @@ class MainConductor: Conductor {
    fileprivate let _tabController = UITabBarController()
    fileprivate let _profileConductor = ProfileConductor()
    fileprivate let _leaderboardsConductor = LeaderboardsConductor()
+   fileprivate let _rulesConductor = RulesConductor()
    
    fileprivate lazy var _childConductors: [TabConductor] = {
-      return [self._profileConductor, self._leaderboardsConductor]
+      return [self._profileConductor, self._leaderboardsConductor, self._rulesConductor]
    }()
    
    override var rootViewController: UIViewController? {
@@ -48,8 +49,8 @@ class MainConductor: Conductor {
       ]
       
       let button = UIButton(type: .custom)
-      let normalAttrTitle = NSAttributedString(string: "INFLUENCE!", attributes: normalAttrs)
-      let highlightedTitle = NSAttributedString(string: "INFLUENCE!", attributes: highlightedAttrs)
+      let normalAttrTitle = NSAttributedString(string: "SHARE!", attributes: normalAttrs)
+      let highlightedTitle = NSAttributedString(string: "SHARE!", attributes: highlightedAttrs)
       
       button.setAttributedTitle(normalAttrTitle, for: .normal)
       button.setAttributedTitle(highlightedTitle, for: .highlighted)
@@ -59,7 +60,7 @@ class MainConductor: Conductor {
       
       _tabController.view.addSubview(button)
       NSLayoutConstraint.activate([
-         button.widthAnchor.constraint(equalTo: _tabController.view.widthAnchor, multiplier: 0.5),
+         button.widthAnchor.constraint(equalTo: _tabController.view.widthAnchor, multiplier: 0.4),
          button.heightAnchor.constraint(equalToConstant: _tabController.tabBar.frame.height),
          button.trailingAnchor.constraint(equalTo: _tabController.view.trailingAnchor),
          button.bottomAnchor.constraint(equalTo: _tabController.view.bottomAnchor)

@@ -22,13 +22,6 @@ class LeaderboardsConductor: TabConductor {
    }
    
    override func conductorWillShow(in context: UINavigationController) {
-      context.navigationBar.shadowImage = UIImage()
-      context.navigationBar.setShadow(opacity: 0.1, yOffset: -2, radius: 20)
-      context.navigationBar.setBackgroundImage(UIImage.with(color: .white), for: .default)
-      context.navigationBar.titleTextAttributes = [
-         NSForegroundColorAttributeName : UIColor(.outerSpace),
-         NSFontAttributeName : UIFont(16, .book),
-         NSKernAttributeName : 1.5
-      ]
+      context.navigationBar.configureWithInfluenceDefaults()
    }
 }
