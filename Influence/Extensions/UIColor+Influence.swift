@@ -9,7 +9,7 @@
 import UIKit
 
 enum Color: String {
-   case mint, spearmint, lime, lipstick, darkGray, lightGray, outerSpace, white
+   case mint, spearmint, lime, lipstick, darkGray, lightGray, outerSpace, white, red
    
    var hex: String {
       switch self {
@@ -21,6 +21,7 @@ enum Color: String {
       case .lightGray: return "727272"
       case .outerSpace: return "030D15"
       case .white: return "FFFFFF"
+      case .red: return "AB4174"
       }
    }
 }

@@ -10,13 +10,12 @@ import UIKit
 
 struct AppRouter {
    private let rootNavigationController = UINavigationController()
-   let welcomeConductor = WelcomeConductor()
+   let mainConductor = MainConductor()
    
    init(window: UIWindow) {
       window.rootViewController = rootNavigationController
       window.makeKeyAndVisible()
       
-      rootNavigationController.navigationBar.barStyle = .black
-      welcomeConductor.show(with: rootNavigationController)
+      mainConductor.show(with: rootNavigationController)
    }
 }

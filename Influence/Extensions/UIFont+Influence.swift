@@ -9,7 +9,7 @@
 import UIKit
 
 enum FontWeight: String {
-   case light = "Light", medium = "Medium", bold = "Bold", book = "Book"
+   case light = "Light", medium = "Medium", bold = "Bold", book = "Book", black = "Black"
 }
 
 extension UIFont {

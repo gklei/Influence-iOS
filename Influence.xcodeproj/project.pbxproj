@@ -22,14 +22,20 @@
 		CE10DF551F214DB2002E7536 /* Gotham-XLightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = CE10DF451F214D7C002E7536 /* Gotham-XLightItalic.otf */; };
 		CE10DF561F214DE5002E7536 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE10DF3B1F214AC9002E7536 /* GoogleService-Info.plist */; };
 		CE76781D1F213CA900C1DD87 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE76781C1F213CA900C1DD87 /* AppDelegate.swift */; };
-		CE76781F1F213CA900C1DD87 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE76781E1F213CA900C1DD87 /* ViewController.swift */; };
+		CE76781F1F213CA900C1DD87 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE76781E1F213CA900C1DD87 /* ProfileViewController.swift */; };
 		CE7678241F213CA900C1DD87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE7678231F213CA900C1DD87 /* Assets.xcassets */; };
 		CE7678271F213CA900C1DD87 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE7678251F213CA900C1DD87 /* LaunchScreen.storyboard */; };
+		CE8147471F22FB8100FF9E5B /* MainConductor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8147461F22FB8100FF9E5B /* MainConductor.swift */; };
+		CE81474A1F22FF0000FF9E5B /* LeaderboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8147491F22FF0000FF9E5B /* LeaderboardViewController.swift */; };
+		CE81474C1F22FF6A00FF9E5B /* LeaderboardsConductor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE81474B1F22FF6A00FF9E5B /* LeaderboardsConductor.swift */; };
+		CE81474E1F2302FE00FF9E5B /* UIImage+Influence.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE81474D1F2302FD00FF9E5B /* UIImage+Influence.swift */; };
 		CE8696971F2156E700491931 /* UIFont+Influence.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8696961F2156E700491931 /* UIFont+Influence.swift */; };
 		CE8696991F21575C00491931 /* UIColor+Influence.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8696981F21575C00491931 /* UIColor+Influence.swift */; };
 		CE86969B1F21665600491931 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE86969A1F21665600491931 /* AppRouter.swift */; };
-		CE86969D1F2167E800491931 /* WelcomeConductor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE86969C1F2167E800491931 /* WelcomeConductor.swift */; };
+		CE86969D1F2167E800491931 /* ProfileConductor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE86969C1F2167E800491931 /* ProfileConductor.swift */; };
 		CE8696A01F22480D00491931 /* DetailMenuLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE86969F1F22480D00491931 /* DetailMenuLabel.swift */; };
+		CEE9FC571F23A56C0058E6A8 /* UIView+Influence.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE9FC561F23A56C0058E6A8 /* UIView+Influence.swift */; };
+		CEE9FC591F23A58A0058E6A8 /* UITabBar+Influence.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE9FC581F23A58A0058E6A8 /* UITabBar+Influence.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,15 +57,21 @@
 		CE10DF571F21527D002E7536 /* Influence.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Influence.entitlements; sourceTree = "<group>"; };
 		CE7678191F213CA900C1DD87 /* Influence.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Influence.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE76781C1F213CA900C1DD87 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CE76781E1F213CA900C1DD87 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CE76781E1F213CA900C1DD87 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		CE7678231F213CA900C1DD87 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE7678261F213CA900C1DD87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE7678281F213CA900C1DD87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE8147461F22FB8100FF9E5B /* MainConductor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainConductor.swift; sourceTree = "<group>"; };
+		CE8147491F22FF0000FF9E5B /* LeaderboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardViewController.swift; sourceTree = "<group>"; };
+		CE81474B1F22FF6A00FF9E5B /* LeaderboardsConductor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardsConductor.swift; sourceTree = "<group>"; };
+		CE81474D1F2302FD00FF9E5B /* UIImage+Influence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIImage+Influence.swift"; path = "Extensions/UIImage+Influence.swift"; sourceTree = "<group>"; };
 		CE8696961F2156E700491931 /* UIFont+Influence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIFont+Influence.swift"; path = "Extensions/UIFont+Influence.swift"; sourceTree = "<group>"; };
 		CE8696981F21575C00491931 /* UIColor+Influence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIColor+Influence.swift"; path = "Extensions/UIColor+Influence.swift"; sourceTree = "<group>"; };
 		CE86969A1F21665600491931 /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
-		CE86969C1F2167E800491931 /* WelcomeConductor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeConductor.swift; sourceTree = "<group>"; };
+		CE86969C1F2167E800491931 /* ProfileConductor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileConductor.swift; sourceTree = "<group>"; };
 		CE86969F1F22480D00491931 /* DetailMenuLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DetailMenuLabel.swift; path = UIKItSubclasses/DetailMenuLabel.swift; sourceTree = "<group>"; };
+		CEE9FC561F23A56C0058E6A8 /* UIView+Influence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIView+Influence.swift"; path = "Extensions/UIView+Influence.swift"; sourceTree = "<group>"; };
+		CEE9FC581F23A58A0058E6A8 /* UITabBar+Influence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UITabBar+Influence.swift"; path = "Extensions/UITabBar+Influence.swift"; sourceTree = "<group>"; };
 		D87ED9A0E37388C4A4B45860 /* Pods-Influence.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Influence.release.xcconfig"; path = "Pods/Target Support Files/Pods-Influence/Pods-Influence.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -134,18 +146,37 @@
 		CE76781B1F213CA900C1DD87 /* Influence */ = {
 			isa = PBXGroup;
 			children = (
+				CE8147481F22FEEA00FF9E5B /* ViewControllers */,
+				CE8147451F22FB6900FF9E5B /* Conductors */,
 				CE86969E1F2247EC00491931 /* UIKit Subclasses */,
 				CE8696951F2156CC00491931 /* Extensions */,
 				CE10DF571F21527D002E7536 /* Influence.entitlements */,
 				CE76781C1F213CA900C1DD87 /* AppDelegate.swift */,
-				CE76781E1F213CA900C1DD87 /* ViewController.swift */,
 				CE7678231F213CA900C1DD87 /* Assets.xcassets */,
 				CE7678251F213CA900C1DD87 /* LaunchScreen.storyboard */,
 				CE7678281F213CA900C1DD87 /* Info.plist */,
 				CE86969A1F21665600491931 /* AppRouter.swift */,
-				CE86969C1F2167E800491931 /* WelcomeConductor.swift */,
 			);
 			path = Influence;
+			sourceTree = "<group>";
+		};
+		CE8147451F22FB6900FF9E5B /* Conductors */ = {
+			isa = PBXGroup;
+			children = (
+				CE81474B1F22FF6A00FF9E5B /* LeaderboardsConductor.swift */,
+				CE8147461F22FB8100FF9E5B /* MainConductor.swift */,
+				CE86969C1F2167E800491931 /* ProfileConductor.swift */,
+			);
+			path = Conductors;
+			sourceTree = "<group>";
+		};
+		CE8147481F22FEEA00FF9E5B /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				CE76781E1F213CA900C1DD87 /* ProfileViewController.swift */,
+				CE8147491F22FF0000FF9E5B /* LeaderboardViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 		CE8696951F2156CC00491931 /* Extensions */ = {
@@ -153,6 +184,9 @@
 			children = (
 				CE8696961F2156E700491931 /* UIFont+Influence.swift */,
 				CE8696981F21575C00491931 /* UIColor+Influence.swift */,
+				CE81474D1F2302FD00FF9E5B /* UIImage+Influence.swift */,
+				CEE9FC561F23A56C0058E6A8 /* UIView+Influence.swift */,
+				CEE9FC581F23A58A0058E6A8 /* UITabBar+Influence.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -307,12 +341,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE8696A01F22480D00491931 /* DetailMenuLabel.swift in Sources */,
-				CE76781F1F213CA900C1DD87 /* ViewController.swift in Sources */,
+				CE81474E1F2302FE00FF9E5B /* UIImage+Influence.swift in Sources */,
+				CEE9FC571F23A56C0058E6A8 /* UIView+Influence.swift in Sources */,
+				CE76781F1F213CA900C1DD87 /* ProfileViewController.swift in Sources */,
 				CE76781D1F213CA900C1DD87 /* AppDelegate.swift in Sources */,
+				CE81474C1F22FF6A00FF9E5B /* LeaderboardsConductor.swift in Sources */,
 				CE8696971F2156E700491931 /* UIFont+Influence.swift in Sources */,
+				CE81474A1F22FF0000FF9E5B /* LeaderboardViewController.swift in Sources */,
+				CE8147471F22FB8100FF9E5B /* MainConductor.swift in Sources */,
 				CE86969B1F21665600491931 /* AppRouter.swift in Sources */,
-				CE86969D1F2167E800491931 /* WelcomeConductor.swift in Sources */,
+				CE86969D1F2167E800491931 /* ProfileConductor.swift in Sources */,
 				CE8696991F21575C00491931 /* UIColor+Influence.swift in Sources */,
+				CEE9FC591F23A58A0058E6A8 /* UITabBar+Influence.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
