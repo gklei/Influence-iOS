@@ -12,7 +12,7 @@ class OnboardingConductor: TabConductor {
    fileprivate lazy var _onboardingContent: [OnboardingContent] = {
       return [
          .content(image: nil,
-                  header: "PYRAMID",
+                  header: "REACH",
                   text: "Compete with your friends to see who can gather the most influence."),
          .content(image: #imageLiteral(resourceName: "share_onboarding_icon"),
                   header: "Get Points",
