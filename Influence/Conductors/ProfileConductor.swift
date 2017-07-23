@@ -8,12 +8,13 @@
 
 import Conduction
 
-class ProfileConductor: TabConductor {
+class ProfileConductor: Conductor {
    fileprivate lazy var _welcomeVC: ProfileViewController = {
       let vc = ProfileViewController()
       vc.title = "PROFILE"
-      vc.tabBarItem = UITabBarItem(title: nil, image: #imageLiteral(resourceName: "user_icon"), selectedImage: #imageLiteral(resourceName: "user_icon_selected"))
-      vc.tabBarItem.imageInsets = UIEdgeInsetsMake(6, 0, -6, 0)
+      let rightItem = UIBarButtonItem(image: #imageLiteral(resourceName: "gear_icon"), style: .plain, target: nil, action: nil)
+      rightItem.tintColor = UIColor(.outerSpace)
+      vc.navigationItem.rightBarButtonItem = rightItem
       return vc
    }()
    
@@ -23,5 +24,10 @@ class ProfileConductor: TabConductor {
    
    override func conductorWillShow(in context: UINavigationController) {
       context.navigationBar.configureWithInfluenceDefaults()
+   }
+   
+   override func conductorDidShow(in context: UINavigationController) {
+      let loginConductor = LoginConductor()
+      loginConductor.show(with: context)
    }
 }

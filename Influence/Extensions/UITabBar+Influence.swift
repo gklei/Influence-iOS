@@ -13,7 +13,7 @@ extension UITabBar {
       unselectedItemTintColor = UIColor(.outerSpace)
       tintColor = UIColor(.red)
       isTranslucent = false
-      shadowImage = UIImage()
+      shadowImage = UIImage.with(color: .outerSpace)
       backgroundImage = UIImage.with(color: .white)
       setShadow(opacity: 0.1, xOffset: 0, yOffset: 2, radius: 20)
    }

@@ -39,6 +39,12 @@
 		CEE9FC5B1F23A7D50058E6A8 /* RulesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE9FC5A1F23A7D50058E6A8 /* RulesViewController.swift */; };
 		CEE9FC5D1F23A7F90058E6A8 /* UINavigationBar+Influence.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE9FC5C1F23A7F90058E6A8 /* UINavigationBar+Influence.swift */; };
 		CEE9FC5F1F23A84F0058E6A8 /* RulesConductor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE9FC5E1F23A84F0058E6A8 /* RulesConductor.swift */; };
+		CEE9FC611F242C4F0058E6A8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE9FC601F242C4F0058E6A8 /* LoginViewController.swift */; };
+		CEE9FC631F242C940058E6A8 /* LoginConductor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE9FC621F242C940058E6A8 /* LoginConductor.swift */; };
+		CEE9FC651F24311F0058E6A8 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE9FC641F24311F0058E6A8 /* SignupViewController.swift */; };
+		CEE9FC671F24313B0058E6A8 /* SignupConductor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE9FC661F24313B0058E6A8 /* SignupConductor.swift */; };
+		CEE9FC691F2431DC0058E6A8 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE9FC681F2431DC0058E6A8 /* OnboardingViewController.swift */; };
+		CEE9FC6B1F2431FD0058E6A8 /* OnboardingConductor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE9FC6A1F2431FD0058E6A8 /* OnboardingConductor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -78,6 +84,12 @@
 		CEE9FC5A1F23A7D50058E6A8 /* RulesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulesViewController.swift; sourceTree = "<group>"; };
 		CEE9FC5C1F23A7F90058E6A8 /* UINavigationBar+Influence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UINavigationBar+Influence.swift"; path = "Extensions/UINavigationBar+Influence.swift"; sourceTree = "<group>"; };
 		CEE9FC5E1F23A84F0058E6A8 /* RulesConductor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulesConductor.swift; sourceTree = "<group>"; };
+		CEE9FC601F242C4F0058E6A8 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		CEE9FC621F242C940058E6A8 /* LoginConductor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginConductor.swift; sourceTree = "<group>"; };
+		CEE9FC641F24311F0058E6A8 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		CEE9FC661F24313B0058E6A8 /* SignupConductor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupConductor.swift; sourceTree = "<group>"; };
+		CEE9FC681F2431DC0058E6A8 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		CEE9FC6A1F2431FD0058E6A8 /* OnboardingConductor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingConductor.swift; sourceTree = "<group>"; };
 		D87ED9A0E37388C4A4B45860 /* Pods-Influence.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Influence.release.xcconfig"; path = "Pods/Target Support Files/Pods-Influence/Pods-Influence.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -173,6 +185,9 @@
 				CE8147461F22FB8100FF9E5B /* MainConductor.swift */,
 				CE86969C1F2167E800491931 /* ProfileConductor.swift */,
 				CEE9FC5E1F23A84F0058E6A8 /* RulesConductor.swift */,
+				CEE9FC621F242C940058E6A8 /* LoginConductor.swift */,
+				CEE9FC661F24313B0058E6A8 /* SignupConductor.swift */,
+				CEE9FC6A1F2431FD0058E6A8 /* OnboardingConductor.swift */,
 			);
 			path = Conductors;
 			sourceTree = "<group>";
@@ -183,6 +198,9 @@
 				CE76781E1F213CA900C1DD87 /* ProfileViewController.swift */,
 				CE8147491F22FF0000FF9E5B /* LeaderboardViewController.swift */,
 				CEE9FC5A1F23A7D50058E6A8 /* RulesViewController.swift */,
+				CEE9FC601F242C4F0058E6A8 /* LoginViewController.swift */,
+				CEE9FC641F24311F0058E6A8 /* SignupViewController.swift */,
+				CEE9FC681F2431DC0058E6A8 /* OnboardingViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -352,16 +370,22 @@
 				CEE9FC5B1F23A7D50058E6A8 /* RulesViewController.swift in Sources */,
 				CE8696A01F22480D00491931 /* DetailMenuLabel.swift in Sources */,
 				CE81474E1F2302FE00FF9E5B /* UIImage+Influence.swift in Sources */,
+				CEE9FC671F24313B0058E6A8 /* SignupConductor.swift in Sources */,
+				CEE9FC691F2431DC0058E6A8 /* OnboardingViewController.swift in Sources */,
 				CEE9FC571F23A56C0058E6A8 /* UIView+Influence.swift in Sources */,
 				CE76781F1F213CA900C1DD87 /* ProfileViewController.swift in Sources */,
 				CE76781D1F213CA900C1DD87 /* AppDelegate.swift in Sources */,
 				CE81474C1F22FF6A00FF9E5B /* LeaderboardsConductor.swift in Sources */,
+				CEE9FC631F242C940058E6A8 /* LoginConductor.swift in Sources */,
+				CEE9FC651F24311F0058E6A8 /* SignupViewController.swift in Sources */,
 				CE8696971F2156E700491931 /* UIFont+Influence.swift in Sources */,
+				CEE9FC6B1F2431FD0058E6A8 /* OnboardingConductor.swift in Sources */,
 				CEE9FC5D1F23A7F90058E6A8 /* UINavigationBar+Influence.swift in Sources */,
 				CE81474A1F22FF0000FF9E5B /* LeaderboardViewController.swift in Sources */,
 				CE8147471F22FB8100FF9E5B /* MainConductor.swift in Sources */,
 				CEE9FC5F1F23A84F0058E6A8 /* RulesConductor.swift in Sources */,
 				CE86969B1F21665600491931 /* AppRouter.swift in Sources */,
+				CEE9FC611F242C4F0058E6A8 /* LoginViewController.swift in Sources */,
 				CE86969D1F2167E800491931 /* ProfileConductor.swift in Sources */,
 				CE8696991F21575C00491931 /* UIColor+Influence.swift in Sources */,
 				CEE9FC591F23A58A0058E6A8 /* UITabBar+Influence.swift in Sources */,
