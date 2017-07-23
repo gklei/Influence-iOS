@@ -14,7 +14,8 @@ class OnboardingViewController: ElementalViewController {
    fileprivate(set) var conductionModel: OnboardingConductionModel
    
    fileprivate lazy var _signupButton: UIButton = {
-      let button = UIButton(title: "Sign Up",
+      let button = UIButton(title: "SIGN UP",
+                            fontWeight: .light,
                             titleColor: UIColor(.white),
                             backgroundColor: UIColor(.outerSpace),
                             highlightedBackgroundColor: UIColor(.red))
@@ -24,7 +25,7 @@ class OnboardingViewController: ElementalViewController {
    }()
    
    fileprivate lazy var _loginButton: UIButton = {
-      let button = UIButton(title: "Log In", font: UIFont(14, .medium), tintColor: UIColor(.outerSpace))
+      let button = UIButton(title: "LOG IN", font: UIFont(14, .light), tintColor: UIColor(.outerSpace))
       button.frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width - 24, height: 48)
       return button
    }()

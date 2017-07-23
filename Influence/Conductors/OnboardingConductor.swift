@@ -9,18 +9,22 @@
 import Conduction
 
 class OnboardingConductor: TabConductor {
-   fileprivate lazy var _onboardingVC: OnboardingViewController = {
-      let conductionModel = OnboardingConductionModel(content: [
+   fileprivate lazy var _onboardingContent: [OnboardingContent] = {
+      return [
          .content(image: nil,
                   header: "PYRAMID",
                   text: "Compete with your friends to see who can gather the most influence."),
          .content(image: #imageLiteral(resourceName: "share_onboarding_icon"),
-                  header: "GET POINTS",
+                  header: "Get Points",
                   text: "Sign up as many friends as you can for points."),
          .content(image: #imageLiteral(resourceName: "graph_onboarding_icon"),
-                  header: "GLOBAL RANKINGS",
+                  header: "Global Rankings",
                   text: "Leaderboards make it easy to see where you rank in your city, state, or just among your friends."),
-         ])
+         ]
+   }()
+   
+   fileprivate lazy var _onboardingVC: OnboardingViewController = {
+      let conductionModel = OnboardingConductionModel(content: self._onboardingContent)
       conductionModel.isOnboardingFinished = false
       conductionModel.delegate = self
       let vc = OnboardingViewController(conductionModel: conductionModel)
@@ -48,12 +52,12 @@ extension OnboardingConductor: OnboardingConductionModelDelegate {
    func signupButtonPressed(model: OnboardingConductionModel) {
       if !model.isOnboardingFinished {
          _onboardingVC.advance()
+      } else {
       }
    }
    
    func onboardingPageTransitionCompleted(index: Int, model: OnboardingConductionModel) {
-      print("index: \(index)")
-      _onboardingVC.conductionModel.isOnboardingFinished = index == 2
+      _onboardingVC.conductionModel.isOnboardingFinished = index == _onboardingContent.count - 1
    }
 }
 

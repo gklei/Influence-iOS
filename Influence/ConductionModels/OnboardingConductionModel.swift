@@ -57,7 +57,7 @@ class OnboardingConductionModel: ReadWriteKeyedConductionModel<OnboardingKey, On
    
    override func didSet(conductedValue: Any?, with value: inout Any?, for key: OnboardingKey) {
       guard let finished = self[.isOnboardingFinished] as? Bool else { fatalError() }
-      state.signUpButtonText = finished ? "Sign Up" : "Next"
+      state.signUpButtonText = finished ? "SIGN UP" : "NEXT"
    }
    
    // MARK: - Actions
