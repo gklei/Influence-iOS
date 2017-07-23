@@ -1,6 +1,7 @@
 # Xcode
 #
 # gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
+Influence.xcworkspace/xcuserdata/ghk.xcuserdatad/UserInterfaceState.xcuserstate
 
 ## Development Pods
 Pods/Elemental/
