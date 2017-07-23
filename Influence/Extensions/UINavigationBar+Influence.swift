@@ -10,6 +10,7 @@ import UIKit
 
 extension UINavigationBar {
    func configureWithInfluenceDefaults() {
+      tintColor = UIColor(.outerSpace)
       shadowImage = UIImage.with(color: .outerSpace)
 //      setShadow(opacity: 0.1, yOffset: -2, radius: 20)
       setBackgroundImage(UIImage.with(color: .white), for: .default)

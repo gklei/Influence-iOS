@@ -35,24 +35,30 @@ class OnboardingConductor: TabConductor {
       return vc
    }()
    
+   fileprivate let _loginConductor = LoginConductor()
+   fileprivate let _signupConductor = SignupConductor()
+   
    override var rootViewController: UIViewController? {
       return _onboardingVC
    }
    
    override func conductorWillShow(in context: UINavigationController) {
       context.navigationBar.configureWithInfluenceDefaults()
-      context.navigationBar.shadowImage = UIImage()
    }
 }
 
 extension OnboardingConductor: OnboardingConductionModelDelegate {
    func loginButtonPressed(model: OnboardingConductionModel) {
+      guard let context = context else { return }
+      _loginConductor.show(with: context, animated: true)
    }
    
    func signupButtonPressed(model: OnboardingConductionModel) {
       if !model.isOnboardingFinished {
          _onboardingVC.advance()
       } else {
+         guard let context = context else { return }
+         _signupConductor.show(with: context, animated: true)
       }
    }
    

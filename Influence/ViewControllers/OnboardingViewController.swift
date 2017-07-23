@@ -20,13 +20,14 @@ class OnboardingViewController: ElementalViewController {
                             backgroundColor: UIColor(.outerSpace),
                             highlightedBackgroundColor: UIColor(.red))
       button.frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width - 24, height: 48)
-      button.addTarget(self, action: #selector(OnboardingViewController.signupButtonPressed(sender:)), for: .touchUpInside)
+      button.addTarget(self, action: #selector(OnboardingViewController._signupButtonPressed(sender:)), for: .touchUpInside)
       return button
    }()
    
    fileprivate lazy var _loginButton: UIButton = {
       let button = UIButton(title: "LOG IN", font: UIFont(14, .light), tintColor: UIColor(.outerSpace))
       button.frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width - 24, height: 48)
+      button.addTarget(self, action: #selector(OnboardingViewController._loginButtonPressed(sender:)), for: .touchUpInside)
       return button
    }()
    
@@ -69,8 +70,12 @@ class OnboardingViewController: ElementalViewController {
       _onboardingPageVC.navigate(.forward)
    }
    
-   @objc fileprivate func signupButtonPressed(sender: UIButton) {
+   @objc fileprivate func _signupButtonPressed(sender: UIButton) {
       conductionModel.signupButtonPressed()
+   }
+   
+   @objc fileprivate func _loginButtonPressed(sender: UIButton) {
+      conductionModel.loginButtonPressed()
    }
 }
 
