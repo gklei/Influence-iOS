@@ -25,7 +25,7 @@ class OnboardingViewController: ElementalViewController {
    }()
    
    fileprivate lazy var _loginButton: UIButton = {
-      let button = UIButton(title: "LOG IN", font: UIFont(14, .light), tintColor: UIColor(.outerSpace))
+      let button = UIButton(title: "Log In", font: UIFont(14, .light), tintColor: UIColor(.outerSpace))
       button.frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width - 24, height: 48)
       button.addTarget(self, action: #selector(OnboardingViewController._loginButtonPressed(sender:)), for: .touchUpInside)
       return button
@@ -54,6 +54,7 @@ class OnboardingViewController: ElementalViewController {
    override func formDidLoad() {
       super.formDidLoad()
       sidePadding = 0.0
+      delaysContentTouches = false
    }
    
    override func generateElements() -> [Elemental]? {

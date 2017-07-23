@@ -11,7 +11,7 @@ import Conduction
 class LeaderboardsConductor: TabConductor {
    fileprivate lazy var _leaderboardVC: LeaderboardViewController = {
       let vc = LeaderboardViewController()
-      vc.title = "LEADERBOARDS"
+      vc.title = "Leaderboards"
       vc.tabBarItem = UITabBarItem(title: nil, image: #imageLiteral(resourceName: "leaderboards_icon"), selectedImage: #imageLiteral(resourceName: "leaderboards_icon_selected"))
       vc.tabBarItem.imageInsets = UIEdgeInsetsMake(6, 0, -6, 0)
       return vc

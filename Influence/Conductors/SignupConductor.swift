@@ -11,7 +11,7 @@ import Conduction
 class SignupConductor: Conductor {
    fileprivate lazy var _loginVC: SignupViewController = {
       let vc = SignupViewController()
-      vc.title = "SIGNUP"
+      vc.title = "Sign Up"
       vc.tabBarItem = UITabBarItem(title: nil, image: #imageLiteral(resourceName: "user_icon"), selectedImage: #imageLiteral(resourceName: "user_icon_selected"))
       vc.tabBarItem.imageInsets = UIEdgeInsetsMake(6, 0, -6, 0)
       return vc
