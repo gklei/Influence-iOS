@@ -16,10 +16,13 @@ class OnboardingViewController: ElementalViewController {
    fileprivate lazy var _signupButton: UIButton = {
       let button = UIButton(title: "SIGN UP",
                             fontWeight: .light,
-                            titleColor: UIColor(.white),
-                            backgroundColor: UIColor(.outerSpace),
-                            highlightedBackgroundColor: UIColor(.red))
+                            titleColor: UIColor(.outerSpace),
+                            backgroundColor: UIColor.clear,
+                            highlightedBackgroundColor: UIColor(.red, alpha: 0.25))
       button.frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width - 24, height: 48)
+      button.layer.borderColor = UIColor(.outerSpace).cgColor
+      button.layer.borderWidth = 1
+      button.layer.cornerRadius = 3
       button.addTarget(self, action: #selector(OnboardingViewController._signupButtonPressed(sender:)), for: .touchUpInside)
       return button
    }()

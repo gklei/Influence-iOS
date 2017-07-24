@@ -50,6 +50,7 @@
 		CEE9FC731F24398E0058E6A8 /* OnboardingContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE9FC6E1F2438A20058E6A8 /* OnboardingContentViewController.swift */; };
 		CEE9FC741F2439950058E6A8 /* OnboardingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE9FC6F1F2438A20058E6A8 /* OnboardingPageViewController.swift */; };
 		CEE9FC761F243A6E0058E6A8 /* UILabel+Influence.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE9FC751F243A6E0058E6A8 /* UILabel+Influence.swift */; };
+		CEE9FC791F25341C0058E6A8 /* ElementConfigurations.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE9FC781F25341C0058E6A8 /* ElementConfigurations.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -100,6 +101,7 @@
 		CEE9FC6F1F2438A20058E6A8 /* OnboardingPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPageViewController.swift; sourceTree = "<group>"; };
 		CEE9FC711F24391A0058E6A8 /* OnboardingConductionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OnboardingConductionModel.swift; path = ConductionModels/OnboardingConductionModel.swift; sourceTree = "<group>"; };
 		CEE9FC751F243A6E0058E6A8 /* UILabel+Influence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UILabel+Influence.swift"; path = "Extensions/UILabel+Influence.swift"; sourceTree = "<group>"; };
+		CEE9FC781F25341C0058E6A8 /* ElementConfigurations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ElementConfigurations.swift; path = ElementStyles/ElementConfigurations.swift; sourceTree = "<group>"; };
 		D87ED9A0E37388C4A4B45860 /* Pods-Influence.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Influence.release.xcconfig"; path = "Pods/Target Support Files/Pods-Influence/Pods-Influence.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -174,6 +176,7 @@
 		CE76781B1F213CA900C1DD87 /* Influence */ = {
 			isa = PBXGroup;
 			children = (
+				CEE9FC771F2533FB0058E6A8 /* Element Styles */,
 				CEE9FC701F2439030058E6A8 /* Conduction Models */,
 				CE8147481F22FEEA00FF9E5B /* ViewControllers */,
 				CE8147451F22FB6900FF9E5B /* Conductors */,
@@ -247,6 +250,14 @@
 				CEE9FC711F24391A0058E6A8 /* OnboardingConductionModel.swift */,
 			);
 			name = "Conduction Models";
+			sourceTree = "<group>";
+		};
+		CEE9FC771F2533FB0058E6A8 /* Element Styles */ = {
+			isa = PBXGroup;
+			children = (
+				CEE9FC781F25341C0058E6A8 /* ElementConfigurations.swift */,
+			);
+			name = "Element Styles";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -402,6 +413,7 @@
 				CE81474C1F22FF6A00FF9E5B /* LeaderboardsConductor.swift in Sources */,
 				CEE9FC631F242C940058E6A8 /* LoginConductor.swift in Sources */,
 				CEE9FC651F24311F0058E6A8 /* SignupViewController.swift in Sources */,
+				CEE9FC791F25341C0058E6A8 /* ElementConfigurations.swift in Sources */,
 				CE8696971F2156E700491931 /* UIFont+Influence.swift in Sources */,
 				CEE9FC721F24391A0058E6A8 /* OnboardingConductionModel.swift in Sources */,
 				CEE9FC6B1F2431FD0058E6A8 /* OnboardingConductor.swift in Sources */,
