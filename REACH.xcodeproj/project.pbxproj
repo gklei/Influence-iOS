@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6FAFB9921C355118DE8CC07D /* Pods_Influence.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BE7D8018D8E7287370F7283 /* Pods_Influence.framework */; };
 		CE10DF4A1F214DB2002E7536 /* Gotham-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = CE10DF3E1F214D7C002E7536 /* Gotham-Black.otf */; };
 		CE10DF4B1F214DB2002E7536 /* Gotham-BlackItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = CE10DF491F214D7C002E7536 /* Gotham-BlackItalic.otf */; };
 		CE10DF4C1F214DB2002E7536 /* Gotham-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = CE10DF461F214D7C002E7536 /* Gotham-Bold.otf */; };
@@ -20,6 +19,8 @@
 		CE10DF531F214DB2002E7536 /* Gotham-MediumItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = CE10DF441F214D7C002E7536 /* Gotham-MediumItalic.otf */; };
 		CE10DF541F214DB2002E7536 /* Gotham-XLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = CE10DF471F214D7C002E7536 /* Gotham-XLight.otf */; };
 		CE10DF551F214DB2002E7536 /* Gotham-XLightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = CE10DF451F214D7C002E7536 /* Gotham-XLightItalic.otf */; };
+		CE6D74EA1F27C8E400B8751F /* APIRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6D74E91F27C8E400B8751F /* APIRequests.swift */; };
+		CE6D74EC1F27CA0500B8751F /* APIAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6D74EB1F27CA0500B8751F /* APIAccount.swift */; };
 		CE76781D1F213CA900C1DD87 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE76781C1F213CA900C1DD87 /* AppDelegate.swift */; };
 		CE76781F1F213CA900C1DD87 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE76781E1F213CA900C1DD87 /* ProfileViewController.swift */; };
 		CE7678241F213CA900C1DD87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE7678231F213CA900C1DD87 /* Assets.xcassets */; };
@@ -72,6 +73,8 @@
 		CE10DF481F214D7C002E7536 /* Gotham-LightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Gotham-LightItalic.otf"; path = "Influence/Resources/Gotham-LightItalic.otf"; sourceTree = "<group>"; };
 		CE10DF491F214D7C002E7536 /* Gotham-BlackItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Gotham-BlackItalic.otf"; path = "Influence/Resources/Gotham-BlackItalic.otf"; sourceTree = "<group>"; };
 		CE10DF571F21527D002E7536 /* Influence.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Influence.entitlements; sourceTree = "<group>"; };
+		CE6D74E91F27C8E400B8751F /* APIRequests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = APIRequests.swift; path = API/APIRequests.swift; sourceTree = "<group>"; };
+		CE6D74EB1F27CA0500B8751F /* APIAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = APIAccount.swift; path = API/APIAccount.swift; sourceTree = "<group>"; };
 		CE7678191F213CA900C1DD87 /* REACH.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = REACH.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE76781C1F213CA900C1DD87 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE76781E1F213CA900C1DD87 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
@@ -112,7 +115,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6FAFB9921C355118DE8CC07D /* Pods_Influence.framework in Frameworks */,
 				D9774427F50F9A3FC8AE21B4 /* Pods_REACH.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -159,6 +161,15 @@
 			name = Resources;
 			sourceTree = "<group>";
 		};
+		CE6D74E81F27C87400B8751F /* API */ = {
+			isa = PBXGroup;
+			children = (
+				CE6D74E91F27C8E400B8751F /* APIRequests.swift */,
+				CE6D74EB1F27CA0500B8751F /* APIAccount.swift */,
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
 		CE7678101F213CA900C1DD87 = {
 			isa = PBXGroup;
 			children = (
@@ -181,6 +192,7 @@
 		CE76781B1F213CA900C1DD87 /* Influence */ = {
 			isa = PBXGroup;
 			children = (
+				CE6D74E81F27C87400B8751F /* API */,
 				CEE9FC771F2533FB0058E6A8 /* Element Styles */,
 				CEE9FC701F2439030058E6A8 /* Conduction Models */,
 				CE8147481F22FEEA00FF9E5B /* ViewControllers */,
@@ -407,6 +419,8 @@
 			files = (
 				CEE9FC741F2439950058E6A8 /* OnboardingPageViewController.swift in Sources */,
 				CEE9FC5B1F23A7D50058E6A8 /* RulesViewController.swift in Sources */,
+				CE6D74EA1F27C8E400B8751F /* APIRequests.swift in Sources */,
+				CE6D74EC1F27CA0500B8751F /* APIAccount.swift in Sources */,
 				CE8696A01F22480D00491931 /* DetailMenuLabel.swift in Sources */,
 				CE81474E1F2302FE00FF9E5B /* UIImage+Influence.swift in Sources */,
 				CEE9FC671F24313B0058E6A8 /* SignupConductor.swift in Sources */,

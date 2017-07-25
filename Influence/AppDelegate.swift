@@ -17,10 +17,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
    var appRouter: AppRouter?
    
    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-      
       let baseURL = URL(string: "http://localhost:3000/api")!
       let config = IncNetworkRequestConfiguration(baseURL: baseURL)
       IncNetworkRequestConfiguration.shared = config
+      
+      let queue = IncNetworkSerialQueue()
+      IncNetworkQueue.shared = queue
       
       IQKeyboardManager.sharedManager().enable = true
       IQKeyboardManager.sharedManager().toolbarTintColor = UIColor(.outerSpace)
