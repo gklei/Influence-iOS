@@ -9,20 +9,6 @@ PODS:
     - Bindable
   - Elemental (0.1.0):
     - Bindable
-  - Firebase/Core (4.0.0):
-    - FirebaseAnalytics (= 4.0.0)
-    - FirebaseCore (= 4.0.0)
-  - FirebaseAnalytics (4.0.0):
-    - FirebaseCore (~> 4.0)
-    - FirebaseInstanceID (~> 2.0)
-    - GoogleToolboxForMac/NSData+zlib (~> 2.1)
-  - FirebaseCore (4.0.0):
-    - GoogleToolboxForMac/NSData+zlib (~> 2.1)
-  - FirebaseInstanceID (2.0.0):
-    - FirebaseCore (~> 4.0)
-  - GoogleToolboxForMac/Defines (2.1.1)
-  - GoogleToolboxForMac/NSData+zlib (2.1.1):
-    - GoogleToolboxForMac/Defines (= 2.1.1)
   - IQKeyboardManagerSwift (4.0.9)
   - Pastel (0.3.0)
 
@@ -31,7 +17,6 @@ DEPENDENCIES:
   - Branch
   - Conduction (from `Pods/Conduction`)
   - Elemental (from `Pods/Elemental`)
-  - Firebase/Core
   - IQKeyboardManagerSwift
   - Pastel
 
@@ -48,14 +33,9 @@ SPEC CHECKSUMS:
   Branch: f63d9cf82ac09747349a73184a0b739d28781c4d
   Conduction: c5ea9edbcf91d0597ad180bcd1816a00b0edf21e
   Elemental: d933cb88a1b79fbeda98f8e316523d4cb245b7f4
-  Firebase: 284eea779b73fdff309791817da7c68bff8dd572
-  FirebaseAnalytics: 6f08e746f7d66f5452931bc2e822b5df9c66b64a
-  FirebaseCore: 85ad466044c2f013cdb167f85d426d15b128114a
-  FirebaseInstanceID: 9fbf536668f4d3f0880e7438456dabd1376e294b
-  GoogleToolboxForMac: 8e329f1b599f2512c6b10676d45736bcc2cbbeb0
   IQKeyboardManagerSwift: 2eefe6c429b86aa08bfbc1b5c891164d754adf91
   Pastel: 738740c84f2b15bbcd96ebe99c4e6c2f5dd42262
 
-PODFILE CHECKSUM: 0471f2470965b79ef0a325f4edd7d369a38837d8
+PODFILE CHECKSUM: d747c2537219db5c172fdb5753cd72a377aa6f24
 
 COCOAPODS: 1.2.1

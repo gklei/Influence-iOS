@@ -7,7 +7,6 @@
 //
 
 import UIKit
-//import Firebase
 import Branch
 import IQKeyboardManagerSwift
 
@@ -18,7 +17,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
    
    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
       
-//      _setupFirebase()
       
       IQKeyboardManager.sharedManager().enable = true
       IQKeyboardManager.sharedManager().toolbarTintColor = UIColor(.outerSpace)
@@ -55,11 +53,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
       
       return true
    }
-   
-//   private func _setupFirebase() {
-//      let path = Bundle.main.path(forResource: "GoogleService-Info", ofType: "plist")!
-//      let options = FirebaseOptions(contentsOfFile: path)!
-//      FirebaseApp.configure(options: options)
-//   }
 }
 

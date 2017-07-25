@@ -24,11 +24,6 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>GoogleToolboxForMac.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>IQKeyboardManagerSwift.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -39,7 +34,7 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-Influence.xcscheme</key>
+		<key>Pods-REACH.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
