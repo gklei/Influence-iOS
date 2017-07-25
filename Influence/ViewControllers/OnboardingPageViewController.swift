@@ -52,7 +52,7 @@ class OnboardingPageViewController: UIPageViewController {
    private func _commonInit() {
       let appearance = UIPageControl.appearance()
       appearance.pageIndicatorTintColor = UIColor(.outerSpace, alpha: 0.25)
-      appearance.currentPageIndicatorTintColor = UIColor(.outerSpace)
+      appearance.currentPageIndicatorTintColor = UIColor(.red)
       delegate = self
       dataSource = self
    }

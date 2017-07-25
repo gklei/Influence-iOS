@@ -19,7 +19,7 @@ enum Color: String {
       case .lipstick: return "F43252"
       case .darkGray: return "515151"
       case .lightGray: return "727272"
-      case .outerSpace: return "030D15"
+      case .outerSpace: return "242F41"
       case .white: return "FFFFFF"
       case .red: return "AB4174"
       }

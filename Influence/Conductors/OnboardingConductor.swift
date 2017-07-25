@@ -11,7 +11,7 @@ import Conduction
 class OnboardingConductor: TabConductor {
    fileprivate lazy var _onboardingContent: [OnboardingContent] = {
       return [
-         .content(image: nil,
+         .content(image: #imageLiteral(resourceName: "triangle_icon"),
                   header: "REACH",
                   text: "Compete with your friends to see who can gather the most influence."),
          .content(image: #imageLiteral(resourceName: "share_onboarding_icon"),

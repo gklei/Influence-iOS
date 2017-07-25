@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import Firebase
+//import Firebase
 import Branch
 
 @UIApplicationMain
@@ -17,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
    
    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
       
-      _setupFirebase()
+//      _setupFirebase()
       
       window = UIWindow()
       appRouter = AppRouter(window: window!)
@@ -52,10 +52,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
       return true
    }
    
-   private func _setupFirebase() {
-      let path = Bundle.main.path(forResource: "GoogleService-Info", ofType: "plist")!
-      let options = FirebaseOptions(contentsOfFile: path)!
-      FirebaseApp.configure(options: options)
-   }
+//   private func _setupFirebase() {
+//      let path = Bundle.main.path(forResource: "GoogleService-Info", ofType: "plist")!
+//      let options = FirebaseOptions(contentsOfFile: path)!
+//      FirebaseApp.configure(options: options)
+//   }
 }
 

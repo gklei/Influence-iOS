@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:Influence.xcodeproj">
+      location = "group:/Users/gregoryklein/Projects/incipia/ios/Influence/REACH.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">

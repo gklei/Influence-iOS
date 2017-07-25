@@ -70,7 +70,7 @@
 		CE10DF481F214D7C002E7536 /* Gotham-LightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Gotham-LightItalic.otf"; path = "Influence/Resources/Gotham-LightItalic.otf"; sourceTree = "<group>"; };
 		CE10DF491F214D7C002E7536 /* Gotham-BlackItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Gotham-BlackItalic.otf"; path = "Influence/Resources/Gotham-BlackItalic.otf"; sourceTree = "<group>"; };
 		CE10DF571F21527D002E7536 /* Influence.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Influence.entitlements; sourceTree = "<group>"; };
-		CE7678191F213CA900C1DD87 /* Influence.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Influence.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE7678191F213CA900C1DD87 /* REACH.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = REACH.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE76781C1F213CA900C1DD87 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE76781E1F213CA900C1DD87 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		CE7678231F213CA900C1DD87 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -168,7 +168,7 @@
 		CE76781A1F213CA900C1DD87 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CE7678191F213CA900C1DD87 /* Influence.app */,
+				CE7678191F213CA900C1DD87 /* REACH.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -263,9 +263,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CE7678181F213CA900C1DD87 /* Influence */ = {
+		CE7678181F213CA900C1DD87 /* REACH */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CE76782B1F213CA900C1DD87 /* Build configuration list for PBXNativeTarget "Influence" */;
+			buildConfigurationList = CE76782B1F213CA900C1DD87 /* Build configuration list for PBXNativeTarget "REACH" */;
 			buildPhases = (
 				72CE8A362754D42323FAF48E /* [CP] Check Pods Manifest.lock */,
 				CE7678151F213CA900C1DD87 /* Sources */,
@@ -278,9 +278,9 @@
 			);
 			dependencies = (
 			);
-			name = Influence;
+			name = REACH;
 			productName = Influence;
-			productReference = CE7678191F213CA900C1DD87 /* Influence.app */;
+			productReference = CE7678191F213CA900C1DD87 /* REACH.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -305,7 +305,7 @@
 					};
 				};
 			};
-			buildConfigurationList = CE7678141F213CA900C1DD87 /* Build configuration list for PBXProject "Influence" */;
+			buildConfigurationList = CE7678141F213CA900C1DD87 /* Build configuration list for PBXProject "REACH" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -318,7 +318,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CE7678181F213CA900C1DD87 /* Influence */,
+				CE7678181F213CA900C1DD87 /* REACH */,
 			);
 		};
 /* End PBXProject section */
@@ -572,7 +572,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CE7678141F213CA900C1DD87 /* Build configuration list for PBXProject "Influence" */ = {
+		CE7678141F213CA900C1DD87 /* Build configuration list for PBXProject "REACH" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CE7678291F213CA900C1DD87 /* Debug */,
@@ -581,7 +581,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CE76782B1F213CA900C1DD87 /* Build configuration list for PBXNativeTarget "Influence" */ = {
+		CE76782B1F213CA900C1DD87 /* Build configuration list for PBXNativeTarget "REACH" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CE76782C1F213CA900C1DD87 /* Debug */,
