@@ -23,6 +23,7 @@ PODS:
   - GoogleToolboxForMac/Defines (2.1.1)
   - GoogleToolboxForMac/NSData+zlib (2.1.1):
     - GoogleToolboxForMac/Defines (= 2.1.1)
+  - IQKeyboardManagerSwift (4.0.9)
   - Pastel (0.3.0)
 
 DEPENDENCIES:
@@ -31,6 +32,7 @@ DEPENDENCIES:
   - Conduction (from `Pods/Conduction`)
   - Elemental (from `Pods/Elemental`)
   - Firebase/Core
+  - IQKeyboardManagerSwift
   - Pastel
 
 EXTERNAL SOURCES:
@@ -51,8 +53,9 @@ SPEC CHECKSUMS:
   FirebaseCore: 85ad466044c2f013cdb167f85d426d15b128114a
   FirebaseInstanceID: 9fbf536668f4d3f0880e7438456dabd1376e294b
   GoogleToolboxForMac: 8e329f1b599f2512c6b10676d45736bcc2cbbeb0
+  IQKeyboardManagerSwift: 2eefe6c429b86aa08bfbc1b5c891164d754adf91
   Pastel: 738740c84f2b15bbcd96ebe99c4e6c2f5dd42262
 
-PODFILE CHECKSUM: f535c894ceec1fad3382a9c49002747dd0ccd76b
+PODFILE CHECKSUM: 0471f2470965b79ef0a325f4edd7d369a38837d8
 
 COCOAPODS: 1.2.1

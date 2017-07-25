@@ -9,6 +9,7 @@ target 'Influence' do
   pod 'Firebase/Core'
   pod 'Branch'
   pod 'Pastel'
+  pod 'IQKeyboardManagerSwift'
 
   # Development Pods
   pod 'Elemental', :path => 'Pods/Elemental'
