@@ -62,7 +62,7 @@ class OnboardingViewController: ElementalViewController {
    
    override func generateElements() -> [Elemental]? {
       return Element.form([
-         .viewController(_onboardingPageVC, sizeConstraint: ElementalSize(height: .multiplier(0.8))),
+         .viewController(_onboardingPageVC, sizeConstraint: ElementalSize(height: .multiplier(0.78))),
          .view(_signupButton),
          .verticalSpace(4),
          .view(_loginButton),

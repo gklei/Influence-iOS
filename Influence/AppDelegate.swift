@@ -9,6 +9,7 @@
 import UIKit
 //import Firebase
 import Branch
+import IQKeyboardManagerSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -18,6 +19,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
       
 //      _setupFirebase()
+      
+      IQKeyboardManager.sharedManager().enable = true
+      IQKeyboardManager.sharedManager().toolbarTintColor = UIColor(.outerSpace)
       
       window = UIWindow()
       appRouter = AppRouter(window: window!)
