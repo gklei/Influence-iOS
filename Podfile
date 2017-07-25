@@ -14,4 +14,5 @@ target 'REACH' do
   pod 'Elemental', :path => 'Pods/Elemental'
   pod 'Bindable', :path => 'Pods/Bindable'
   pod 'Conduction', :path => 'Pods/Conduction'
+  pod 'IncNetworkLayer', :path => 'Pods/IncNetworkLayer'
 end

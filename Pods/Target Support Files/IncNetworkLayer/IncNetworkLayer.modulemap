@@ -1,0 +1,6 @@
+framework module IncNetworkLayer {
+  umbrella header "IncNetworkLayer-umbrella.h"
+
+  export *
+  module * { export * }
+}

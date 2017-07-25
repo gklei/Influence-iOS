@@ -1,9 +1,9 @@
 ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES
-FRAMEWORK_SEARCH_PATHS = $(inherited) "$PODS_CONFIGURATION_BUILD_DIR/Bindable" "$PODS_CONFIGURATION_BUILD_DIR/Branch" "$PODS_CONFIGURATION_BUILD_DIR/Conduction" "$PODS_CONFIGURATION_BUILD_DIR/Elemental" "$PODS_CONFIGURATION_BUILD_DIR/IQKeyboardManagerSwift" "$PODS_CONFIGURATION_BUILD_DIR/Pastel"
+FRAMEWORK_SEARCH_PATHS = $(inherited) "$PODS_CONFIGURATION_BUILD_DIR/Bindable" "$PODS_CONFIGURATION_BUILD_DIR/Branch" "$PODS_CONFIGURATION_BUILD_DIR/Conduction" "$PODS_CONFIGURATION_BUILD_DIR/Elemental" "$PODS_CONFIGURATION_BUILD_DIR/IQKeyboardManagerSwift" "$PODS_CONFIGURATION_BUILD_DIR/IncNetworkLayer" "$PODS_CONFIGURATION_BUILD_DIR/Pastel"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
 LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
-OTHER_CFLAGS = $(inherited) -iquote "$PODS_CONFIGURATION_BUILD_DIR/Bindable/Bindable.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/Branch/Branch.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/Conduction/Conduction.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/Elemental/Elemental.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/Pastel/Pastel.framework/Headers"
-OTHER_LDFLAGS = $(inherited) -framework "Bindable" -framework "Branch" -framework "Conduction" -framework "Elemental" -framework "IQKeyboardManagerSwift" -framework "Pastel"
+OTHER_CFLAGS = $(inherited) -iquote "$PODS_CONFIGURATION_BUILD_DIR/Bindable/Bindable.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/Branch/Branch.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/Conduction/Conduction.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/Elemental/Elemental.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/IncNetworkLayer/IncNetworkLayer.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/Pastel/Pastel.framework/Headers"
+OTHER_LDFLAGS = $(inherited) -framework "Bindable" -framework "Branch" -framework "Conduction" -framework "Elemental" -framework "IQKeyboardManagerSwift" -framework "IncNetworkLayer" -framework "Pastel"
 OTHER_SWIFT_FLAGS = $(inherited) "-D" "COCOAPODS"
 PODS_BUILD_DIR = $BUILD_DIR
 PODS_CONFIGURATION_BUILD_DIR = $PODS_BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)

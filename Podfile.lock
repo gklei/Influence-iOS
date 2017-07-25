@@ -9,6 +9,7 @@ PODS:
     - Bindable
   - Elemental (0.1.0):
     - Bindable
+  - IncNetworkLayer (0.1.0)
   - IQKeyboardManagerSwift (4.0.9)
   - Pastel (0.3.0)
 
@@ -17,6 +18,7 @@ DEPENDENCIES:
   - Branch
   - Conduction (from `Pods/Conduction`)
   - Elemental (from `Pods/Elemental`)
+  - IncNetworkLayer (from `Pods/IncNetworkLayer`)
   - IQKeyboardManagerSwift
   - Pastel
 
@@ -27,15 +29,18 @@ EXTERNAL SOURCES:
     :path: Pods/Conduction
   Elemental:
     :path: Pods/Elemental
+  IncNetworkLayer:
+    :path: Pods/IncNetworkLayer
 
 SPEC CHECKSUMS:
   Bindable: 5b66126db4938727036b1cc15be77c15b738487c
   Branch: f63d9cf82ac09747349a73184a0b739d28781c4d
   Conduction: c5ea9edbcf91d0597ad180bcd1816a00b0edf21e
   Elemental: d933cb88a1b79fbeda98f8e316523d4cb245b7f4
+  IncNetworkLayer: 519e841e4c143a31320b81dcbadf540640022857
   IQKeyboardManagerSwift: 2eefe6c429b86aa08bfbc1b5c891164d754adf91
   Pastel: 738740c84f2b15bbcd96ebe99c4e6c2f5dd42262
 
-PODFILE CHECKSUM: d747c2537219db5c172fdb5753cd72a377aa6f24
+PODFILE CHECKSUM: 69498e70d942439c3d06a963bc95c069be17c20a
 
 COCOAPODS: 1.2.1
