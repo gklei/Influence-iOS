@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		CE0C583A1F27DD87006EC2F9 /* UIBarButtonItem+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0C58391F27DD87006EC2F9 /* UIBarButtonItem+Extensions.swift */; };
+		CE0C583C1F28DB90006EC2F9 /* SignupConductionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0C583B1F28DB90006EC2F9 /* SignupConductionModel.swift */; };
 		CE10DF4A1F214DB2002E7536 /* Gotham-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = CE10DF3E1F214D7C002E7536 /* Gotham-Black.otf */; };
 		CE10DF4B1F214DB2002E7536 /* Gotham-BlackItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = CE10DF491F214D7C002E7536 /* Gotham-BlackItalic.otf */; };
 		CE10DF4C1F214DB2002E7536 /* Gotham-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = CE10DF461F214D7C002E7536 /* Gotham-Bold.otf */; };
@@ -62,6 +63,7 @@
 		BF2775C48C5E7E2796EA6DD8 /* Pods-REACH.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-REACH.release.xcconfig"; path = "Pods/Target Support Files/Pods-REACH/Pods-REACH.release.xcconfig"; sourceTree = "<group>"; };
 		CA2B0893DB7DA1D810B78A2A /* Pods_REACH.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_REACH.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE0C58391F27DD87006EC2F9 /* UIBarButtonItem+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIBarButtonItem+Extensions.swift"; path = "Extensions/UIBarButtonItem+Extensions.swift"; sourceTree = "<group>"; };
+		CE0C583B1F28DB90006EC2F9 /* SignupConductionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SignupConductionModel.swift; path = ConductionModels/SignupConductionModel.swift; sourceTree = "<group>"; };
 		CE10DF3E1F214D7C002E7536 /* Gotham-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Gotham-Black.otf"; path = "Influence/Resources/Gotham-Black.otf"; sourceTree = "<group>"; };
 		CE10DF3F1F214D7C002E7536 /* Gotham-Book.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Gotham-Book.otf"; path = "Influence/Resources/Gotham-Book.otf"; sourceTree = "<group>"; };
 		CE10DF401F214D7C002E7536 /* Gotham-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Gotham-Light.otf"; path = "Influence/Resources/Gotham-Light.otf"; sourceTree = "<group>"; };
@@ -268,6 +270,7 @@
 			isa = PBXGroup;
 			children = (
 				CEE9FC711F24391A0058E6A8 /* OnboardingConductionModel.swift */,
+				CE0C583B1F28DB90006EC2F9 /* SignupConductionModel.swift */,
 			);
 			name = "Conduction Models";
 			sourceTree = "<group>";
@@ -439,6 +442,7 @@
 				CE8696971F2156E700491931 /* UIFont+Influence.swift in Sources */,
 				CEE9FC721F24391A0058E6A8 /* OnboardingConductionModel.swift in Sources */,
 				CEE9FC6B1F2431FD0058E6A8 /* OnboardingConductor.swift in Sources */,
+				CE0C583C1F28DB90006EC2F9 /* SignupConductionModel.swift in Sources */,
 				CEE9FC5D1F23A7F90058E6A8 /* UINavigationBar+Influence.swift in Sources */,
 				CE81474A1F22FF0000FF9E5B /* LeaderboardViewController.swift in Sources */,
 				CE8147471F22FB8100FF9E5B /* MainConductor.swift in Sources */,

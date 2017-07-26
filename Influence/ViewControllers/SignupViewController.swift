@@ -9,7 +9,7 @@
 import Elemental
 
 class SignupViewController: ElementalViewController {
-   var model: APIAccount.Signup? {
+   var model: SignupConductionModel? {
       didSet {
          setNeedsReload()
       }
