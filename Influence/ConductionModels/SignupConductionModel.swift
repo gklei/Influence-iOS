@@ -38,7 +38,7 @@ class SignupConductionModel: KeyedConductionModel<APIAccount.Signup.Key, SignupS
    override func didSet(conductedValue: Any?, with value: inout Any?, for key: Key) {
       state.update { state in
          state.passwordsMatchText = self._passwordsMatch() ? nil : "Passwords do not match"
-         state.isContinueButtonEnabled = self._passwordsMatch() && self[.username] != nil && self[.email] != nil
+         state.isContinueButtonEnabled = self._passwordsMatch() && self[.username] != nil && self[.email] != nil && self[.password] != nil
       }
    }
    
@@ -55,10 +55,16 @@ class SignupConductionModel: KeyedConductionModel<APIAccount.Signup.Key, SignupS
    }
    
    func signupOperationStarted() {
-      state.isShowingActivityIndicator = true
+      state.update { state in
+         state.isShowingActivityIndicator = true
+         state.isContinueButtonEnabled = false
+      }
    }
    
    func signupOperationFinished() {
-      state.isShowingActivityIndicator = false
+      state.update { state in
+         state.isShowingActivityIndicator = false
+         state.isContinueButtonEnabled = true
+      }
    }
 }

@@ -28,10 +28,15 @@ class SignupConductor: Conductor {
                                      target: self,
                                      action: #selector(Conductor.dismiss))
       backItem.tintColor = UIColor(.outerSpace)
+      
+      self._continueItem = item
       vc.navigationItem.leftBarButtonItem = backItem
       
       return vc
    }()
+   
+   fileprivate var _activityItem: UIBarButtonItem?
+   fileprivate var _continueItem: UIBarButtonItem?
    
    override var rootViewController: UIViewController? {
       return _signupVC
@@ -43,7 +48,12 @@ class SignupConductor: Conductor {
       let conductionModel = SignupConductionModel()
       conductionModel.delegate = self
       conductionModel.addStateObserver { old, new in
-         self._signupVC.navigationItem.rightBarButtonItem?.isEnabled = new.isContinueButtonEnabled
+         self._continueItem?.isEnabled = new.isContinueButtonEnabled
+         if new.isShowingActivityIndicator {
+            self._activityItem = self._signupVC.navigationItem.addRightActivityItem(tintColor: UIColor(.outerSpace))
+         } else {
+            self._signupVC.navigationItem.removeRightActivityItem(self._activityItem)
+         }
       }
       
       _signupVC.model = conductionModel
@@ -56,6 +66,7 @@ class SignupConductor: Conductor {
 
 extension SignupConductor: SignupConductionModelDelegate {
    func continueButtonPressed(model: SignupConductionModel) {
+      _signupVC.view.endEditing(true)
       var apiInput = APIAccount.Signup()
       try! model.sync(model: &apiInput)
       
@@ -70,6 +81,26 @@ extension SignupConductor: SignupConductionModelDelegate {
       }
       
       model.signupOperationStarted()
-      IncNetworkQueue.shared.addOperation(signupOp)
+      DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+         IncNetworkQueue.shared.addOperation(signupOp)
+      }
+   }
+}
+
+extension UINavigationItem {
+   func addRightActivityItem(tintColor: UIColor = .gray) -> UIBarButtonItem {
+      let activityView = UIActivityIndicatorView()
+      activityView.color = tintColor
+      activityView.startAnimating()
+      
+      let item = UIBarButtonItem(customView: activityView)
+      rightBarButtonItems?.append(item)
+      return item
+   }
+   
+   func removeRightActivityItem(_ item: UIBarButtonItem?) {
+      guard let item = item else { return }
+      guard let index = rightBarButtonItems?.index(of: item) else { return }
+      rightBarButtonItems?.remove(at: index)
    }
 }
