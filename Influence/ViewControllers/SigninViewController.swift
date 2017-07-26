@@ -8,8 +8,8 @@
 
 import Elemental
 
-class LoginViewController: ElementalViewController {
-   var model: APIAccount.Signin? {
+class SigninViewController: ElementalViewController {
+   var model: SigninConductionModel? {
       didSet {
          setNeedsReload()
       }

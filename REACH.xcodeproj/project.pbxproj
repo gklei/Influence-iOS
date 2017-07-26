@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		CE0C583A1F27DD87006EC2F9 /* UIBarButtonItem+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0C58391F27DD87006EC2F9 /* UIBarButtonItem+Extensions.swift */; };
 		CE0C583C1F28DB90006EC2F9 /* SignupConductionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0C583B1F28DB90006EC2F9 /* SignupConductionModel.swift */; };
+		CE0C583E1F28FDBE006EC2F9 /* SigninConductionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0C583D1F28FDBE006EC2F9 /* SigninConductionModel.swift */; };
 		CE10DF4A1F214DB2002E7536 /* Gotham-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = CE10DF3E1F214D7C002E7536 /* Gotham-Black.otf */; };
 		CE10DF4B1F214DB2002E7536 /* Gotham-BlackItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = CE10DF491F214D7C002E7536 /* Gotham-BlackItalic.otf */; };
 		CE10DF4C1F214DB2002E7536 /* Gotham-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = CE10DF461F214D7C002E7536 /* Gotham-Bold.otf */; };
@@ -41,8 +42,8 @@
 		CEE9FC5B1F23A7D50058E6A8 /* RulesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE9FC5A1F23A7D50058E6A8 /* RulesViewController.swift */; };
 		CEE9FC5D1F23A7F90058E6A8 /* UINavigationBar+Influence.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE9FC5C1F23A7F90058E6A8 /* UINavigationBar+Influence.swift */; };
 		CEE9FC5F1F23A84F0058E6A8 /* RulesConductor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE9FC5E1F23A84F0058E6A8 /* RulesConductor.swift */; };
-		CEE9FC611F242C4F0058E6A8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE9FC601F242C4F0058E6A8 /* LoginViewController.swift */; };
-		CEE9FC631F242C940058E6A8 /* LoginConductor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE9FC621F242C940058E6A8 /* LoginConductor.swift */; };
+		CEE9FC611F242C4F0058E6A8 /* SigninViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE9FC601F242C4F0058E6A8 /* SigninViewController.swift */; };
+		CEE9FC631F242C940058E6A8 /* SigninConductor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE9FC621F242C940058E6A8 /* SigninConductor.swift */; };
 		CEE9FC651F24311F0058E6A8 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE9FC641F24311F0058E6A8 /* SignupViewController.swift */; };
 		CEE9FC671F24313B0058E6A8 /* SignupConductor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE9FC661F24313B0058E6A8 /* SignupConductor.swift */; };
 		CEE9FC691F2431DC0058E6A8 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE9FC681F2431DC0058E6A8 /* OnboardingViewController.swift */; };
@@ -64,6 +65,7 @@
 		CA2B0893DB7DA1D810B78A2A /* Pods_REACH.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_REACH.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE0C58391F27DD87006EC2F9 /* UIBarButtonItem+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIBarButtonItem+Extensions.swift"; path = "Extensions/UIBarButtonItem+Extensions.swift"; sourceTree = "<group>"; };
 		CE0C583B1F28DB90006EC2F9 /* SignupConductionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SignupConductionModel.swift; path = ConductionModels/SignupConductionModel.swift; sourceTree = "<group>"; };
+		CE0C583D1F28FDBE006EC2F9 /* SigninConductionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SigninConductionModel.swift; path = ConductionModels/SigninConductionModel.swift; sourceTree = "<group>"; };
 		CE10DF3E1F214D7C002E7536 /* Gotham-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Gotham-Black.otf"; path = "Influence/Resources/Gotham-Black.otf"; sourceTree = "<group>"; };
 		CE10DF3F1F214D7C002E7536 /* Gotham-Book.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Gotham-Book.otf"; path = "Influence/Resources/Gotham-Book.otf"; sourceTree = "<group>"; };
 		CE10DF401F214D7C002E7536 /* Gotham-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Gotham-Light.otf"; path = "Influence/Resources/Gotham-Light.otf"; sourceTree = "<group>"; };
@@ -99,8 +101,8 @@
 		CEE9FC5A1F23A7D50058E6A8 /* RulesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulesViewController.swift; sourceTree = "<group>"; };
 		CEE9FC5C1F23A7F90058E6A8 /* UINavigationBar+Influence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UINavigationBar+Influence.swift"; path = "Extensions/UINavigationBar+Influence.swift"; sourceTree = "<group>"; };
 		CEE9FC5E1F23A84F0058E6A8 /* RulesConductor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulesConductor.swift; sourceTree = "<group>"; };
-		CEE9FC601F242C4F0058E6A8 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		CEE9FC621F242C940058E6A8 /* LoginConductor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginConductor.swift; sourceTree = "<group>"; };
+		CEE9FC601F242C4F0058E6A8 /* SigninViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninViewController.swift; sourceTree = "<group>"; };
+		CEE9FC621F242C940058E6A8 /* SigninConductor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninConductor.swift; sourceTree = "<group>"; };
 		CEE9FC641F24311F0058E6A8 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		CEE9FC661F24313B0058E6A8 /* SignupConductor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupConductor.swift; sourceTree = "<group>"; };
 		CEE9FC681F2431DC0058E6A8 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
@@ -220,7 +222,7 @@
 				CE8147461F22FB8100FF9E5B /* MainConductor.swift */,
 				CE86969C1F2167E800491931 /* ProfileConductor.swift */,
 				CEE9FC5E1F23A84F0058E6A8 /* RulesConductor.swift */,
-				CEE9FC621F242C940058E6A8 /* LoginConductor.swift */,
+				CEE9FC621F242C940058E6A8 /* SigninConductor.swift */,
 				CEE9FC661F24313B0058E6A8 /* SignupConductor.swift */,
 				CEE9FC6A1F2431FD0058E6A8 /* OnboardingConductor.swift */,
 			);
@@ -235,7 +237,7 @@
 				CE76781E1F213CA900C1DD87 /* ProfileViewController.swift */,
 				CE8147491F22FF0000FF9E5B /* LeaderboardViewController.swift */,
 				CEE9FC5A1F23A7D50058E6A8 /* RulesViewController.swift */,
-				CEE9FC601F242C4F0058E6A8 /* LoginViewController.swift */,
+				CEE9FC601F242C4F0058E6A8 /* SigninViewController.swift */,
 				CEE9FC641F24311F0058E6A8 /* SignupViewController.swift */,
 				CEE9FC681F2431DC0058E6A8 /* OnboardingViewController.swift */,
 			);
@@ -271,6 +273,7 @@
 			children = (
 				CEE9FC711F24391A0058E6A8 /* OnboardingConductionModel.swift */,
 				CE0C583B1F28DB90006EC2F9 /* SignupConductionModel.swift */,
+				CE0C583D1F28FDBE006EC2F9 /* SigninConductionModel.swift */,
 			);
 			name = "Conduction Models";
 			sourceTree = "<group>";
@@ -436,7 +439,7 @@
 				CE76781F1F213CA900C1DD87 /* ProfileViewController.swift in Sources */,
 				CE76781D1F213CA900C1DD87 /* AppDelegate.swift in Sources */,
 				CE81474C1F22FF6A00FF9E5B /* LeaderboardsConductor.swift in Sources */,
-				CEE9FC631F242C940058E6A8 /* LoginConductor.swift in Sources */,
+				CEE9FC631F242C940058E6A8 /* SigninConductor.swift in Sources */,
 				CEE9FC651F24311F0058E6A8 /* SignupViewController.swift in Sources */,
 				CEE9FC791F25341C0058E6A8 /* ElementConfigurations.swift in Sources */,
 				CE8696971F2156E700491931 /* UIFont+Influence.swift in Sources */,
@@ -447,8 +450,9 @@
 				CE81474A1F22FF0000FF9E5B /* LeaderboardViewController.swift in Sources */,
 				CE8147471F22FB8100FF9E5B /* MainConductor.swift in Sources */,
 				CEE9FC5F1F23A84F0058E6A8 /* RulesConductor.swift in Sources */,
+				CE0C583E1F28FDBE006EC2F9 /* SigninConductionModel.swift in Sources */,
 				CE86969B1F21665600491931 /* AppRouter.swift in Sources */,
-				CEE9FC611F242C4F0058E6A8 /* LoginViewController.swift in Sources */,
+				CEE9FC611F242C4F0058E6A8 /* SigninViewController.swift in Sources */,
 				CEE9FC731F24398E0058E6A8 /* OnboardingContentViewController.swift in Sources */,
 				CEE9FC6D1F2434A80058E6A8 /* UIButton+Influence.swift in Sources */,
 				CEE9FC761F243A6E0058E6A8 /* UILabel+Influence.swift in Sources */,

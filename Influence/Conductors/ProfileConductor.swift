@@ -27,7 +27,7 @@ class ProfileConductor: Conductor {
    }
    
    override func conductorDidShow(in context: UINavigationController) {
-      let loginConductor = LoginConductor()
+      let loginConductor = SigninConductor()
       loginConductor.show(with: context)
    }
 }

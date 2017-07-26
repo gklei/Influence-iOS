@@ -35,7 +35,7 @@ class OnboardingConductor: TabConductor {
       return vc
    }()
    
-   fileprivate let _loginConductor = LoginConductor()
+   fileprivate let _loginConductor = SigninConductor()
    fileprivate let _signupConductor = SignupConductor()
    
    override var rootViewController: UIViewController? {
