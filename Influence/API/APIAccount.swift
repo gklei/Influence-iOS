@@ -38,12 +38,13 @@ final class APIAccount: APIResponseInitable {
    
    final class Signup: Bindable, APIParameterType {
       enum Key: String, IncKVKeyType {
-         case username, email, password
+         case username, email, password, confirmedPassword
       }
       
       var username: String?
       var email: String?
       var password: String?
+      var confirmedPassword: String?
       
       // MARK: - Bindable
       var keysBeingSet: [Key] = []
@@ -54,6 +55,7 @@ final class APIAccount: APIResponseInitable {
          case .username: return username
          case .email: return email
          case .password: return password
+         case .confirmedPassword: return confirmedPassword
          }
       }
       
@@ -62,6 +64,7 @@ final class APIAccount: APIResponseInitable {
          case .username: username = value as? String
          case .email: email = value as? String
          case .password: password = value as? String
+         case .confirmedPassword: confirmedPassword = value as? String
          }
       }
    }

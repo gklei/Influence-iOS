@@ -17,10 +17,19 @@ class LoginConductor: Conductor {
       vc.tabBarItem.imageInsets = UIEdgeInsetsMake(6, 0, -6, 0)
       
       let loginSelector = #selector(LoginConductor._loginItemPressed)
-      vc.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Continue",
-                                                             style: .plain,
-                                                             target: self,
-                                                             action: loginSelector)
+      let item = UIBarButtonItem(image: #imageLiteral(resourceName: "right_arrow_icon"),
+                                 style: .plain,
+                                 target: self,
+                                 action: loginSelector)
+      item.tintColor = UIColor(.outerSpace)
+      vc.navigationItem.rightBarButtonItem = item
+      
+      let backItem = UIBarButtonItem(image: #imageLiteral(resourceName: "left_arrow_icon"),
+                                     style: .plain,
+                                     target: self,
+                                     action: #selector(Conductor.dismiss))
+      backItem.tintColor = UIColor(.outerSpace)
+      vc.navigationItem.leftBarButtonItem = backItem
       return vc
    }()
    

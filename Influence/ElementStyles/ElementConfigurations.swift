@@ -54,3 +54,39 @@ class TextInputConfiguration: TextInputElementConfiguration {
       inputTintColor = UIColor(.outerSpace)
    }
 }
+
+class TitleCaseInputConfiguration: TextInputConfiguration {
+   init() {
+      super.init(keyboardType: .default, autocapitalizationType: .words)
+   }
+}
+
+class UsernameInputConfiguration: TextInputConfiguration {
+   init() {
+      super.init(keyboardType: .default, autocapitalizationType: .none)
+   }
+}
+
+class EmailInputConfiguration: TextInputConfiguration {
+   init() {
+      super.init(keyboardType: .emailAddress)
+   }
+}
+
+class PasswordInputConfiguration: TextInputConfiguration {
+   init() {
+      super.init(secureEntry: true)
+   }
+}
+
+class NumberInputConfiguration: TextInputConfiguration {
+   init() {
+      super.init(keyboardType: .numberPad)
+   }
+}
+
+extension TextInputElementConfiguration {
+   static var username: TextInputElementConfiguration {
+      return UsernameInputConfiguration()
+   }
+}
