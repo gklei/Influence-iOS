@@ -9,25 +9,22 @@
 import Conduction
 
 class ProfileConductor: Conductor {
-   fileprivate lazy var _welcomeVC: ProfileViewController = {
+   fileprivate lazy var _profileVC: ProfileViewController = {
       let vc = ProfileViewController()
-      vc.title = "PROFILE"
+      vc.title = "Profile"
       let rightItem = UIBarButtonItem(image: #imageLiteral(resourceName: "gear_icon"), style: .plain, target: nil, action: nil)
       rightItem.tintColor = UIColor(.outerSpace)
       vc.navigationItem.rightBarButtonItem = rightItem
+      
+      vc.navigationItem.leftBarButtonItem = UIBarButtonItem()
       return vc
    }()
    
    override var rootViewController: UIViewController? {
-      return _welcomeVC
+      return _profileVC
    }
    
    override func conductorWillShow(in context: UINavigationController) {
       context.navigationBar.configureWithInfluenceDefaults()
-   }
-   
-   override func conductorDidShow(in context: UINavigationController) {
-      let loginConductor = SigninConductor()
-      loginConductor.show(with: context)
    }
 }

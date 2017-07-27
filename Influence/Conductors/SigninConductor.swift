@@ -16,26 +16,26 @@ class SigninConductor: Conductor {
       vc.tabBarItem = UITabBarItem(title: nil, image: #imageLiteral(resourceName: "user_icon"), selectedImage: #imageLiteral(resourceName: "user_icon_selected"))
       vc.tabBarItem.imageInsets = UIEdgeInsetsMake(6, 0, -6, 0)
       
-      let loginSelector = #selector(SigninConductor._signinItemPressed)
-      let item = UIBarButtonItem(image: #imageLiteral(resourceName: "right_arrow_icon"),
-                                 style: .plain,
-                                 target: self,
-                                 action: loginSelector)
-      item.tintColor = UIColor(.outerSpace)
-      vc.navigationItem.rightBarButtonItem = item
-      self._continueItem = item
+      let rightItem = UIBarButtonItem(image: #imageLiteral(resourceName: "right_arrow_icon"),
+                                      style: .plain,
+                                      target: self,
+                                      action: #selector(SigninConductor._signinItemPressed))
+      rightItem.tintColor = UIColor(.outerSpace)
+      vc.navigationItem.rightBarButtonItem = rightItem
+      self._continueItem = rightItem
       
-      let backItem = UIBarButtonItem(image: #imageLiteral(resourceName: "left_arrow_icon"),
+      let leftItem = UIBarButtonItem(image: #imageLiteral(resourceName: "left_arrow_icon"),
                                      style: .plain,
                                      target: self,
                                      action: #selector(Conductor.dismiss))
-      backItem.tintColor = UIColor(.outerSpace)
-      vc.navigationItem.leftBarButtonItem = backItem
+      leftItem.tintColor = UIColor(.outerSpace)
+      vc.navigationItem.leftBarButtonItem = leftItem
       return vc
    }()
    
    fileprivate var _continueItem: UIBarButtonItem?
    fileprivate var _activityItem: UIBarButtonItem?
+   fileprivate let _profileConductor = ProfileConductor()
    
    override var rootViewController: UIViewController? {
       return _signinVC
@@ -74,7 +74,11 @@ extension SigninConductor: SigninConductionModelDelegate {
       let signinOp = SigninOperation(request: request)
       signinOp.completion = { result in
          switch result {
-         case .success(let account): dump(account)
+         case .success(let account):
+            guard let context = self.context else { fatalError() }
+            DispatchQueue.main.async {
+               self._profileConductor.show(with: context, animated: true)
+            }
          case .error(let error): print("Error signing in: \(error.localizedDescription)")
          }
          model.signupOperationFinished()
